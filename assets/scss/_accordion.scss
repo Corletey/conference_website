@@ -97,7 +97,7 @@
             }
         .card-header a{
                 span{
-                    color: #331391;
+                    color: #1e223d;
                     font-size: 16px;
                     font-weight: 800;
                 }
@@ -142,7 +142,7 @@
                 position: absolute;
                 height: 15px;
                 width: 15px;
-                background: #331391;
+                background: #1e223d;
                 content: "";
                 left: 0;
                 right: 0;
@@ -158,7 +158,7 @@
         }
         .nav-item {
             display: block;
-            color: #331391;
+            color: #1e223d;
             font-size: 24px;
             font-weight: 700;
             @media #{$xs}{
@@ -167,7 +167,7 @@
         }
     }
     .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background: #331391;
+        background: #1e223d;
         color: #fff;
         @include transition(.0s);
         &:after {

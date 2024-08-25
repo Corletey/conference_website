@@ -39,7 +39,7 @@
         }
         // Active
         &.active{
-            background: #31118f;
+            background: #1e223d;
             transform: scale(1.2);
             @media #{$sm}{
                 transform: scale(1);
@@ -75,7 +75,7 @@
         }
         // Hover
         &:hover{
-            background: #31118f;
+            background: #1e223d;
             .card-top{
                 border-bottom: 1px solid #fff;
                 span{
@@ -95,7 +95,7 @@
                 .black-btn{
                     padding: 14px 35px;
                     background: #fff;
-                    color: #331391 !important;
+                    color: #1e223d !important;
                 }
             }
 
