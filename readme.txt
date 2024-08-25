@@ -1,8 +1,5 @@
-Thank you for using our template!
+16th Quadrennial General Conference (QGC)
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
+As Africa strives to address socio-economic challenges and achieve sustainable growth, the transformation of the continent's higher education institutions (HEIs) to drive innovation, address sustainable development goals (SDGs), and empower future generations becomes increasingly critical. 
 
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
-
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+The current challenges in higher education in Africa underscore the urgent need for comprehensive reforms and innovative approaches across the continent.
