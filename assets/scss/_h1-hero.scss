@@ -221,7 +221,7 @@
     .cd-timer {
         display: flex;
         justify-content: center;
-        gap: 20px; /* Increased space between the countdown items */
+        gap: 35px; 
         align-items: center;
         text-align: center;
     }
@@ -230,15 +230,15 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-size: 24px; /* Adjust font size as needed */
-        margin: 0 10px; /* Increased space between each item */
-        padding: 20px; /* Added padding for more space */
-        height: 120px; /* Increased height */
-        width: 120px; /* Increased width */
+        font-size: 24px; 
+        margin: 0 20px; 
+        padding: 25px; 
+        height: 120px; 
+        width: 120px; 
     }
     
     .cd-item span {
-        margin-right: 15px; /* Increased space between the number and the colon */
+        margin-right: 20px; 
     }
 
     .cd-item {
