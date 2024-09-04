@@ -201,103 +201,66 @@
 
 
 
-// Counter
+/* Counter Section Styling */
 .counter-section {
     padding-top: 100px;
     position: absolute;
     right: 150px;
     bottom: 100px;
-    @media #{$lg}{
+
+    @media #{$lg} {
         right: 80px;
         bottom: 80px;
     }
-    @media #{$md}{
+
+    @media #{$md}, @media #{$sm}, @media #{$xs} {
         right: 30px;
         bottom: 30px;
     }
-    @media #{$sm}{
-        right: 30px;
-        bottom: 30px;
-    }
-    @media #{$xs}{
-        right: 30px;
-        bottom: 30px;
-    }
+
     .cd-timer {
-        .cd-item {
-            // display: inline-block;
-            // text-align: center;
-            margin-right: 16px;
-            padding-right: 15px;
-            height: 60px;
-            width: 70px;
-            // padding-top: 32px;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-            &:after {
-                position: absolute;
-                right: -10px;
-                top: 6px;
-                width: 10px;
-                height: 10px;
-                content: "";
-                border-radius: 50%;
-                background: #ffdb6f;
-            }
-            &::before{
-                position: absolute;
-                right: -10px;
-                bottom: 25px;
-                width: 10px;
-                height: 10px;
-                content: "";
-                border-radius: 50%;
-                background: #ffdb6f;
-            }
-            &:last-child{
-                &::before{
-                    position: unset;
-                }
-                &:after {
-                    position: unset;
-                }
-            }
-            span {
-                font-size: 60px;
-                color: #ffdb6f;
-                font-weight: 400;
-                line-height: 30px;
-                font-family: $font_3;
-                margin-bottom: 28px;
-                display: inline-block;
-            }
-            p {
-                font-size: 16px;
-                color: #ffdb6f;
-                margin-bottom: 0;
-                line-height: 30px;
-                font-family: $font_3;
-                text-transform: uppercase;
-            }
-        }
-        .cd-item:first-child {
-            margin-left: 0;
-        }
-        
-        
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Increased space between the countdown items */
+        align-items: center;
+        text-align: center;
     }
     
-    .counter-text {
-        span {
-            font-size: 16px;
-            color: #ffffff;
-        }
-        h3 {
-            color: #ffffff;
-            font-weight: 700;
-            line-height: 38px;
-            margin-top: 10px;
-        }
+    .cd-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 24px; /* Adjust font size as needed */
+        margin: 0 10px; /* Increased space between each item */
+        padding: 20px; /* Added padding for more space */
+        height: 120px; /* Increased height */
+        width: 120px; /* Increased width */
+    }
+    
+    .cd-item span {
+        margin-right: 15px; /* Increased space between the number and the colon */
+    }
+
+    .cd-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .cd-item span {
+        font-size: 48px; 
+        color: #ffdb6f;
+        font-weight: 700;
+        line-height: 1; 
+        font-family: $font_3;
+    }
+
+    .cd-item p {
+        font-size: 14px;
+        color: #ffdb6f;
+        margin: 0;
+        line-height: 20px;
+        font-family: $font_3;
+        text-transform: uppercase;
     }
 }

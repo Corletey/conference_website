@@ -55,25 +55,25 @@
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
                             <div class="menu-main d-flex align-items-center justify-content-end">
-                              <!-- Main-menu -->
-                              <div class="main-menu f-right d-none d-lg-block">
-                                <nav>
-                                  <ul id="navigation">
-                                    <li><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#speakers">Speakers</a></li>
-                                    <li><a href="#schedule">Schedule</a></li>
-                                    <li><a href="#hotels">Hotels</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                  </ul>
-                                </nav>
-                              </div>
-                              <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">Get Your Ticket</a>
-                              </div>
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#speakers">Speakers</a></li>
+                                            <li><a href="#schedule">Schedule</a></li>
+                                            <li><a href="#hotels">Hotels</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="#" class="btn header-btn">Get Your Ticket</a>
+                                </div>
                             </div>
                         </div>
-                          
+
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -135,70 +135,33 @@
                     </div>
                 </div>
             </div>
-            <!-- Counter Section Begin -->
-            <div class="counter-section d-none d-sm-block">
-                <div class="cd-timer" id="countdown">
-                    <div class="cd-item">
-                        <span id="days">00</span>
-                        <p>Days</p>
-                    </div>
-                    <div class="cd-item">
-                        <span id="hours">00</span>
-                        <p>Hrs</p>
-                    </div>
-                    <div class="cd-item">
-                        <span id="minutes">00</span>
-                        <p>Min</p>
-                    </div>
-                    <div class="cd-item">
-                        <span id="seconds">00</span>
-                        <p>Sec</p>
-                    </div>
-                </div>
+              <!-- Counter Section Begin -->
+    <div class="counter-section d-none d-sm-block">
+        <div class="cd-timer" id="new-countdown">
+            <div class="cd-item">
+                <span id="new-days">00</span>
+                <p>Days</p>
             </div>
-            <!-- Counter Section End -->
+            <div class="cd-item">
+                <span id="new-hours">00</span>
+                <p>Hrs</p>
+            </div>
+            <div class="cd-item">
+                <span id="new-minutes">00</span>
+                <p>Min</p>
+            </div>
+            <div class="cd-item">
+                <span id="new-seconds">00</span>
+                <p>Sec</p>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
         </div>
         <!-- slider Area End-->
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jul 7, 2025 00:00:00").getTime();
-
-            //Check the dates as the conference will take more than 29 days to begin
-
-            // Update the count down every 1 second
-            var x = setInterval(function () {
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor(
-                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                );
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Display the result
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;
-
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML =
-                        "CONFERENCE STARTED";
-                }
-            }, 1000);
-        </script>
-        <!-- slider Area End-->
         <!--? About Start-->
-               <!--? About Start-->
         <section id="about" class="about-low-area section-padding2">
             <div class="container">
                 <div class="row">
@@ -285,7 +248,8 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#pastConferences">
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#pastConferences">
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-striped table-hover table-bordered">
@@ -303,9 +267,11 @@
                                                 <td>13th General Conference</td>
                                                 <td>Libreville, Gabon</td>
                                                 <td>May 28 – 31, 2013</td>
-                                                <td>Transforming African Higher Education for Graduate Employability and Socio-Economic Development</td>
+                                                <td>Transforming African Higher Education for Graduate Employability and
+                                                    Socio-Economic Development</td>
                                                 <td>
-                                                    a. The Connect between Higher Education and the Productive Sector<br />
+                                                    a. The Connect between Higher Education and the Productive
+                                                    Sector<br />
                                                     b. Graduate Employability<br />
                                                     c. The Role of the Organised Private Sector<br />
                                                     d. Socio-political Environment and Employability<br />
@@ -328,10 +294,12 @@
                                                 <td>11th General Conference</td>
                                                 <td>Cape Town, South Africa</td>
                                                 <td>February 21 – 25, 2005</td>
-                                                <td>Transnational Provision and the Future of Higher Education in Africa</td>
+                                                <td>Transnational Provision and the Future of Higher Education in Africa
+                                                </td>
                                                 <td>
                                                     a. Autonomy of national education systems<br />
-                                                    b. Access limitations and private sector involvement in higher education in Africa<br />
+                                                    b. Access limitations and private sector involvement in higher
+                                                    education in Africa<br />
                                                     c. Assuring Quality in transnational higher education
                                                 </td>
                                             </tr>
@@ -339,19 +307,26 @@
                                                 <td>10th General Conference</td>
                                                 <td>ABIDJAN, Cote d’Ivoire</td>
                                                 <td>February 5 – 9, 2001</td>
-                                                <td>African Universities and the Challenge of Knowledge Creation and Application in the New Century</td>
+                                                <td>African Universities and the Challenge of Knowledge Creation and
+                                                    Application in the New Century</td>
                                                 <td>
-                                                    a. African Higher Education Management and Leadership in the Information Age<br />
-                                                    b. Quality of Training and Research: Towards a Dynamic Process of Curricular Reform and Innovations in African Tertiary Institutions<br />
-                                                    c. Information and Communications Technology: Building Capacity in African Universities<br />
-                                                    d. Women in African Tertiary Institutions: Equity Empowerment and Advancement
+                                                    a. African Higher Education Management and Leadership in the
+                                                    Information Age<br />
+                                                    b. Quality of Training and Research: Towards a Dynamic Process of
+                                                    Curricular Reform and Innovations in African Tertiary
+                                                    Institutions<br />
+                                                    c. Information and Communications Technology: Building Capacity in
+                                                    African Universities<br />
+                                                    d. Women in African Tertiary Institutions: Equity Empowerment and
+                                                    Advancement
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>9th General Conference</td>
                                                 <td>Lusaka, Zambia</td>
                                                 <td>13-17 January, 1997</td>
-                                                <td>The African University in a Rapidly Changing Global Environment: Facing the Challenges of the 21st Century</td>
+                                                <td>The African University in a Rapidly Changing Global Environment:
+                                                    Facing the Challenges of the 21st Century</td>
                                                 <td>
                                                     a. Leadership and Management<br />
                                                     b. Instability and Social Crises<br />
@@ -366,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <!-- Table End -->
             </div>
@@ -554,7 +529,8 @@
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Day 1</a>
+                                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Day
+                                        1</a>
                                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
                                         href="#nav-profile" role="tab" aria-controls="nav-profile"
                                         aria-selected="false">
@@ -2030,40 +2006,51 @@
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
     <script src="./assets/js/jquery.countdown.min.js"></script>
+    <!-- Countdown Script -->
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jul 7, 2025 00:00:00").getTime();
+        document.addEventListener("DOMContentLoaded", function() {
+            var targetDate = new Date(2025, 6, 7, 0, 0, 0); // July 7, 2025
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-            // Get today's date and time
-            var now = new Date().getTime();
+            var x = setInterval(function () {
+                var now = new Date();
+                var distance = targetDate - now;
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                var daysElem = document.getElementById("new-days");
+                var hoursElem = document.getElementById("new-hours");
+                var minutesElem = document.getElementById("new-minutes");
+                var secondsElem = document.getElementById("new-seconds");
 
-            // Display the result
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
+                if (daysElem && hoursElem && minutesElem && secondsElem) {
+                    daysElem.innerHTML = days;
+                    hoursElem.innerHTML = hours;
+                    minutesElem.innerHTML = minutes;
+                    secondsElem.innerHTML = seconds;
+                } else {
+                    console.error("One or more countdown elements not found.");
+                    console.log("Days element:", daysElem);
+                    console.log("Hours element:", hoursElem);
+                    console.log("Minutes element:", minutesElem);
+                    console.log("Seconds element:", secondsElem);
+                }
 
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML =
-                    "CONFERENCE STARTED";
-            }
-        }, 1000);
+                if (distance < 0) {
+                    clearInterval(x);
+                    var countdownElem = document.getElementById("new-countdown");
+                    if (countdownElem) {
+                        countdownElem.innerHTML = "CONFERENCE STARTED";
+                    } else {
+                        console.error("Countdown element not found.");
+                    }
+                }
+            }, 1000);
+        });
     </script>
+
     <!-- contact js -->
     <script src="./assets/js/contact.js"></script>
     <script src="./assets/js/jquery.form.js"></script>
