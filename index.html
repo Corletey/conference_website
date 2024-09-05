@@ -135,38 +135,55 @@
                     </div>
                 </div>
             </div>
-<!-- Counter Section Begin -->
-<div class="counter-section d-none d-sm-block position-absolute" style="right: 150px; bottom: 100px;">
-    <div class="cd-timer" id="new-countdown">
-        <div class="row g-4">
-            <div class="col-3">
-                <div class="cd-item bg-opacity-10 rounded p-3 d-flex flex-column justify-content-center align-items-center" style="height: 120px; width: 120px;">
-                    <span id="new-days" class="fs-1 fw-bold text-warning mb-2" style="line-height: 1;">00</span>
-                    <p class="mb-0 text-uppercase text-warning" style="font-size: 14px;">Days</p>
+            <!-- Counter Section Begin -->
+            <div class="counter-section d-none d-sm-block position-absolute" style="right: 10px; bottom: 100px;">
+                <div class="cd-timer" id="new-countdown">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-auto">
+                            <div class="cd-item rounded p-3 d-flex flex-column justify-content-center align-items-center"
+                                style="height: 120px; width: 120px;">
+                                <span id="new-days" class="fs-1 fw-bold mb-2"
+                                    style="line-height: 1; color: #ffdb6f;">00</span>
+                                <p class="mb-0 text-uppercase" style="font-size: 15px; color: #ffdb6f;">Days</p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <span class="fs-6 fw-bold mx-2" style="color: #ffdb6f; font-size: 4rem;">:</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="cd-item rounded p-3 d-flex flex-column justify-content-center align-items-center"
+                                style="height: 120px; width: 120px;">
+                                <span id="new-hours" class="fs-1 fw-bold mb-2"
+                                    style="line-height: 1; color: #ffdb6f;">00</span>
+                                <p class="mb-0 text-uppercase" style="font-size: 15px; color: #ffdb6f;">Hrs</p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <span class="fs-6 fw-bold mx-2" style="color: #ffdb6f; font-size: 4rem;">:</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="cd-item rounded p-3 d-flex flex-column justify-content-center align-items-center"
+                                style="height: 120px; width: 120px;">
+                                <span id="new-minutes" class="fs-1 fw-bold mb-2"
+                                    style="line-height: 1; color: #ffdb6f;">00</span>
+                                <p class="mb-0 text-uppercase" style="font-size: 15px; color: #ffdb6f;">Min</p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <span class="fs-6 fw-bold mx-2" style="color: #ffdb6f; font-size: 4rem;">:</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="cd-item rounded p-3 d-flex flex-column justify-content-center align-items-center"
+                                style="height: 120px; width: 120px;">
+                                <span id="new-seconds" class="fs-1 fw-bold mb-2"
+                                    style="line-height: 1; color: #ffdb6f;">00</span>
+                                <p class="mb-0 text-uppercase" style="font-size: 15px; color: #ffdb6f;">Sec</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="cd-item bg-opacity-10 rounded p-3 d-flex flex-column justify-content-center align-items-center" style="height: 120px; width: 120px;">
-                    <span id="new-hours" class="fs-1 fw-bold text-warning mb-2" style="line-height: 1;">00</span>
-                    <p class="mb-0 text-uppercase text-warning" style="font-size: 14px;">Hrs</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="cd-item bg-opacity-10 rounded p-3 d-flex flex-column justify-content-center align-items-center" style="height: 120px; width: 120px;">
-                    <span id="new-minutes" class="fs-1 fw-bold text-warning mb-2" style="line-height: 1;">00</span>
-                    <p class="mb-0 text-uppercase text-warning" style="font-size: 14px;">Min</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="cd-item bg-opacity-10 rounded p-3 d-flex flex-column justify-content-center align-items-center" style="height: 120px; width: 120px;">
-                    <span id="new-seconds" class="fs-1 fw-bold text-warning mb-2" style="line-height: 1;">00</span>
-                    <p class="mb-0 text-uppercase text-warning" style="font-size: 14px;">Sec</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Counter Section End -->
+            <!-- Counter Section End -->
 
         </div>
         <!-- slider Area End-->
@@ -2018,7 +2035,7 @@
     <script src="./assets/js/jquery.countdown.min.js"></script>
     <!-- Countdown Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var targetDate = new Date(2025, 6, 7, 0, 0, 0); // July 7, 2025
 
             var x = setInterval(function () {

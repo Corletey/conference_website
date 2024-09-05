@@ -221,7 +221,7 @@
     .cd-timer {
         display: flex;
         justify-content: center;
-        gap: 35px; 
+        gap: 10px; 
         align-items: center;
         text-align: center;
     }
@@ -262,38 +262,5 @@
         line-height: 20px;
         font-family: $font_3;
         text-transform: uppercase;
-    }
-    .counter-section {
-        z-index: 1000;
-    }
-    .cd-timer .time-value {
-        font-size: 48px;
-        color: #ffdb6f;
-        font-weight: 700;
-        line-height: 1;
-    }
-    .cd-timer .time-label {
-        font-size: 14px;
-        color: #ffdb6f;
-        margin: 0;
-        text-transform: uppercase;
-    }
-    .cd-timer .time-separator {
-        font-size: 48px;
-        color: #ffdb6f;
-        font-weight: 700;
-        line-height: 1;
-    }
-    @media (max-width: 1199px) {
-        .counter-section {
-            right: 80px;
-            bottom: 80px;
-        }
-    }
-    @media (max-width: 991px) {
-        .counter-section {
-            right: 30px;
-            bottom: 30px;
-        }
     }
 }
