@@ -103,13 +103,9 @@
                                         16th Quadrennial General Conference
                                     </h1>
                                     <!-- Hero-btn -->
-                                    <div class="slider-btns">
-                                        <a data-animation="fadeInLeft" data-delay="1.0s" href="#"
-                                            class="btn hero-btn">Register
-                                            Now</a>
-                                        <a data-animation="fadeInRight" data-delay="1.0s" href="#"
-                                            class="btn hero-btn">Submit
-                                            Abstract</a>
+                                    <div class="slider-btns" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
+                                        <a href="#" class="btn hero-btn" style="font-weight: bold;  transition: background-color 0.3s ease; min-width: 150px; ">Register Now</a>
+                                        <a href="#" class="btn hero-btn" style="font-weight: bold;  transition: background-color 0.3s ease; min-width: 150px; ">Submit Abstract</a>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +137,7 @@
                 </div>
             </div>
             <!-- Counter Section Begin -->
-            <div class="counter-section position-absolute d-flex flex-wrap justify-content-center align-items-center p-2"
+            <!-- <div class="counter-section position-absolute d-flex flex-wrap justify-content-center align-items-center p-2"
                 style="right: 10px; bottom: 70px;">
                 <div class="cd-timer" id="new-countdown">
                     <div class="row g-2">
@@ -184,7 +180,38 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div id="countdown-container" class="counter-section"
+                style="position: absolute; right: 10px; bottom: 70px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 0.5rem;">
+                <div class="cd-timer" id="new-countdown"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem;">
+                    <div class="cd-item"
+                        style="width: 80px; border-radius: 0.25rem; padding: 0.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 0;">
+                        <span id="new-days"
+                            style="font-size: 2.68rem; font-weight: bold; color: #ffdb6f; line-height: 1; margin-bottom: 0.2rem;">277</span>
+                        <p style="margin: 0; text-transform: uppercase; font-size: 15px; color: #ffdb6f;">Days</p>
+                    </div>
+                    <div class="cd-item"
+                        style="width: 80px; border-radius: 0.25rem; padding: 0.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <span id="new-hours"
+                            style="font-size: 2.68rem; font-weight: bold; color: #ffdb6f; line-height: 1; margin-bottom: 0.2rem;">14</span>
+                        <p style="margin: 0; text-transform: uppercase; font-size: 15px; color: #ffdb6f;">Hrs</p>
+                    </div>
+                    <div class="cd-item"
+                        style="width: 80px; border-radius: 0.25rem; padding: 0.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <span id="new-minutes"
+                            style="font-size: 2.68rem; font-weight: bold; color: #ffdb6f; line-height: 1; margin-bottom: 0.2rem;">08</span>
+                        <p style="margin: 0; text-transform: uppercase; font-size: 15px; color: #ffdb6f;">Min</p>
+                    </div>
+                    <div class="cd-item"
+                        style="width: 80px; border-radius: 0.25rem; padding: 0.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <span id="new-seconds"
+                            style="font-size: 2.68rem; font-weight: bold; color: #ffdb6f; line-height: 1; margin-bottom: 0.2rem;">17</span>
+                        <p style="margin: 0; text-transform: uppercase; font-size: 15px; color: #ffdb6f;">Sec</p>
+                    </div>
+                </div>
             </div>
+
             <!-- Counter Section End -->
         </div>
         <!-- slider Area End-->
@@ -2342,7 +2369,27 @@
             }, 1000);
         });
     </script>
+                
+    <script>
+        function adjustCountdownPosition() {
+            var container = document.getElementById('countdown-container');
+            if (window.innerWidth <= 575) {
+                container.style.position = 'static';
+                container.style.marginTop = '20px';
+                container.style.right = 'auto';
+                container.style.bottom = 'auto';
+            } else {
+                container.style.position = 'absolute';
+                container.style.right = '10px';
+                container.style.bottom = '50px';
+                container.style.marginTop = '0';
+            }
+        }
 
+        window.addEventListener('load', adjustCountdownPosition);
+        window.addEventListener('resize', adjustCountdownPosition);
+    </script>
+        
     <!-- contact js -->
     <script src="./assets/js/contact.js"></script>
     <script src="./assets/js/jquery.form.js"></script>
