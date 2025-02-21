@@ -624,6 +624,7 @@
             </div>
         </section>
         <!-- Speakers End -->
+
         <!--? accordion -->
         <section id="schedule" class="accordion fix section-padding30">
             <div class="container">
@@ -1462,69 +1463,92 @@
             </div>
         </div>
         <!-- gallery Products End -->
+
         <!--? Pricing Card Start -->
         <section id="pricing" class="pricing-card-area section-padding2">
             <div class="container">
-                <!-- Section Tittle -->
+                <!-- Section Title -->
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-8">
                         <div class="section-tittle text-center mb-100">
-                            <h2>Program Pricing</h2>
+                            <h2>Conference Pricing</h2>
                             <p>
-                                The registration fee for the 3-day program includes participation in all sessions, access to all materials and conference proceedings, and attendance at the welcome reception and closing ceremony.
+                                The registration fee covers participation in all sessions, access to conference materials and proceedings, and attendance at networking events.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <!-- Early Bird Pricing with Countdown -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                         <div class="single-card text-center mb-30">
                             <div class="card-top">
-                                <span>Representatives of Member Universities</span>
-                                <h4>US$ 500</h4>
+                                <span>Early Bird (AAU Members)</span>
+                                <h4>US$ 250</h4>
+                                <p class="countdown" id="early-bird-timer"></p>
                             </div>
                             <div class="card-bottom">
                                 <ul>
-                                    <li>Full access to all three days of sessions</li>
-                                    <li>Networking opportunities with participants</li>
-                                    <li>Access to exclusive materials and presentations</li>
+                                    <li>Discounted rate for AAU members</li>
+                                    <li>Valid until April 25, 2025</li>
+                                    <li>Full access to conference sessions</li>
                                     <li>Lunch and Tea/coffee breaks</li>
                                 </ul>
-                                <a href="https://indico.aau.org/e/16gencon" class="black-btn">Register</a>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <!-- AAU Members Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span>AAU Members (Standard)</span>
+                                <h4>US$ 350</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Standard fee for AAU Members after April 25, 2025</li>
+                                    <li>Participation for more than 2 per university: US$ 200 each</li>
+                                    <li>Access to all conference sessions</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Non-AAU Members Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                         <div class="single-card active text-center mb-30">
                             <div class="card-top">
-                                <span>Non-Member Insitutions</span>
-                                <h4>US$ 600</h4>
+                                <span>Non-AAU Members</span>
+                                <h4>US$ 350</h4>
                             </div>
                             <div class="card-bottom">
                                 <ul>
-                                    <li>Full access to all three days of sessions</li>
-                                    <li>Networking opportunities with participants</li>
-                                    <li>Access to exclusive materials and presentations</li>
+                                    <li>Full access to all conference sessions</li>
+                                    <li>Networking with participants</li>
+                                    <li>Conference materials and presentations</li>
                                     <li>Lunch and Tea/coffee breaks</li>
                                 </ul>
-                                <a href="https://indico.aau.org/e/16gencon" class="black-btn">Register</a>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <!-- Industry Stakeholders Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                         <div class="single-card text-center mb-30">
                             <div class="card-top">
                                 <span>Industry Stakeholders</span>
-                                <h4>US$ N/A</h4>
+                                <h4>US$ 400</h4>
                             </div>
                             <div class="card-bottom">
                                 <ul>
-                                    <li>Full access to all three days of sessions</li>
-                                    <li>Networking opportunities with participants</li>
-                                    <li>Access to exclusive materials and presentations</li>
+                                    <li>Participation for industry professionals</li>
+                                    <li>Access to networking and exhibition sessions</li>
+                                    <li>Conference materials and presentations</li>
                                     <li>Lunch and Tea/coffee breaks</li>
                                 </ul>
-                                <a href="https://indico.aau.org/e/16gencon" class="black-btn">Register</a>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
                             </div>
                         </div>
                     </div>
@@ -1532,6 +1556,7 @@
             </div>
         </section>
         <!-- Pricing Card End -->
+
         <!-- Exhibition Pricing Card Start -->
         <section class="pricing-card-area py-5" style="background-color: #331391;">
             <div class="container">
@@ -1547,15 +1572,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Commercial Entities Pricing -->
+                    <!-- Industry Stakeholders Pricing -->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100 shadow-sm hover-shadow transition-300"
                             style="background-color: #ffffff; border: none;">
                             <div class="card-header text-white text-center py-4" style="background-color: #112957;">
-                                <h4 class="my-0 font-weight-bold text-white">Commercial Entities</h4>
+                                <h4 class="my-0 font-weight-bold text-white">Industry Stakeholders</h4>
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$1200 <small
+                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$1,000 <small
                                         style="color: #64676c;">/ booth</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4" style="color: #2d3544;">
                                     <li class="mb-3"><i class="fas fa-check-circle mr-2" style="color: #331391;"></i> Prime
@@ -1580,7 +1605,7 @@
                                 <h4 class="my-0 font-weight-bold text-white">Non-Member Universities</h4>
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$1000 <small
+                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$800 <small
                                         style="color: #64676c;">/ booth</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4" style="color: #2d3544;">
                                     <li class="mb-3"><i class="fas fa-university mr-2" style="color: #331391;"></i>
@@ -1605,7 +1630,7 @@
                                 <h4 class="my-0 font-weight-bold text-white">AAU Member Universities</h4>
                             </div>
                             <div class="card-body d-flex flex-column">
-                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$800 <small
+                                <h1 class="card-title pricing-card-title text-center mb-4" style="color: #331391;">$500 <small
                                         style="color: #64676c;">/ booth</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4" style="color: #2d3544;">
                                     <li class="mb-3"><i class="fas fa-star mr-2" style="color: #331391;"></i> Premium member
@@ -1701,6 +1726,7 @@
             </div>
         </section>
         <!-- Brand Area End-->
+
         <!--? Contact Area Start -->
         <section id="contact" class="contact-section">
             <div class="container">
@@ -2236,6 +2262,7 @@
 
             </div>
         </section>
+        <!--? Contact Area End -->
     </main>
     <footer>
         <!-- Footer Start-->
@@ -2419,7 +2446,7 @@
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
     <script src="./assets/js/jquery.countdown.min.js"></script>
-    <!-- Countdown Script -->
+    <!-- Slider Countdown Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var targetDate = new Date(2025, 6, 7, 0, 0, 0); // July 7, 2025
@@ -2462,6 +2489,26 @@
                 }
             }, 1000);
         });
+    </script>
+    <!-- ConferencePricing Countdown Script -->
+    <script>
+        function startCountdown() {
+            const deadline = new Date("April 25, 2025 23:59:59").getTime();
+            const x = setInterval(function() {
+                let now = new Date().getTime();
+                let t = deadline - now;
+                let days = Math.floor(t / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("early-bird-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s left";
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("early-bird-timer").innerHTML = "Early Bird Pricing Ended";
+                }
+            }, 1000);
+        }
+        window.onload = startCountdown;
     </script>
 
     <!-- contact js -->
