@@ -6,7 +6,10 @@ Date: July 7-11, 2025
 ## Theme:
 Shaping the Future of Higher Education for Innovation and Sustainable Development of Africa
 
-The Association of African Universities (AAU) invites higher education leaders, policymakers, researchers, development partners, and industry stakeholders to the 16th Quadrennial General Conference (QGC). This landmark event will explore innovative solutions to transform African Higher Education Institutions (HEIs), address Sustainable Development Goals (SDGs), and empower future generations.
+The Association of African Universities (AAU) invites higher education leaders, policymakers,
+researchers, development partners, and industry stakeholders to the 16th Quadrennial General Conference (QGC).
+This landmark event will explore innovative solutions to transform African Higher Education Institutions (HEIs),
+ address Sustainable Development Goals (SDGs), and empower future generations.
 
 ## Key Sub-Themes:
 1. Policy and Advocacy for Transforming Higher Education
