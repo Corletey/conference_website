@@ -2154,12 +2154,45 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
+
+        // Add the highlight functionality
+        const sections = document.querySelectorAll('section[id], div[id]');
+        const navItems = document.querySelectorAll('#navigation a');
+
+        function highlightNavigation() {
+            let scrollPosition = window.scrollY;
+            
+            sections.forEach(section => {
+                let sectionTop = section.offsetTop - 150;
+                let sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    navItems.forEach(item => {
+                        // Remove highlight and line from all items
+                        item.style.color = '';
+                        item.style.borderBottom = '';
+                        
+                        // Add highlight and line to current section's nav item
+                        if (item.getAttribute('href') === '#' + section.id) {
+                            item.style.color = '#2d0d8b';
+                            item.style.borderBottom = '2px solid #2d0d8b'; // Add line underneath
+                            item.style.paddingBottom = '5px'; // Add some space between text and line
+                        }
+                    });
+                }
+            });
+        }
+
+        // Run on scroll
+        window.addEventListener('scroll', highlightNavigation);
+
+        // Run on page load
+        highlightNavigation();
     </script>
     <!-- Mobile menu -->
     <script>
