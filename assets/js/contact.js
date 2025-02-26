@@ -85,7 +85,9 @@
 // })
 
 // Contact form handling script
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+
+
+/*document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Get form data
@@ -131,3 +133,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         alert('An error occurred. Please try again later.');
     });
 });
+*/

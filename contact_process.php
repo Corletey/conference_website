@@ -1,4 +1,5 @@
 <?php
+/*
 header('Content-Type: application/json');
 
 // Get POST data
@@ -61,4 +62,5 @@ $send = mail($to, "New Contact Form Submission: " . $subject, $body, $headers);
 
 // Return response
 echo json_encode(['success' => $send]);
+*/
 ?>

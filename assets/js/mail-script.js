@@ -1,5 +1,5 @@
     // -------   Mail Send ajax
-
+/*
      $(document).ready(function() {
         var form = $('#myForm'); // contact form
         var submit = $('.submit-btn'); // submit button
@@ -29,3 +29,4 @@
             });
         });
     });
+    */
