@@ -1955,61 +1955,58 @@ hr {
     -webkit-transition: .6s;
     -o-transition: .6s;
     transition: .6s;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
-.preloader .preloader-circle {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-style: solid;
-    border-width: 3px;
-    border-top-color: #c6a16e;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    z-index: 10;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    background-color: #ffffff;
-    -webkit-animation: zoom 2000ms infinite ease;
-    animation: zoom 2000ms infinite ease;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s
-}
-
-.preloader .preloader-circle2 {
-    border-top-color: #0078ff
+.preloader-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .preloader .preloader-img {
-    position: absolute;
-    top: 50%;
-    z-index: 200;
-    left: 0;
-    right: 0;
     margin: 0 auto;
     text-align: center;
-    display: inline-block;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-top: 6px;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s
+    padding-bottom: 30px;
 }
 
 .preloader .preloader-img img {
-    max-width: 55px
+    max-width: 300px;
+    height: auto;
 }
 
-.preloader .pere-text strong {
-    font-weight: 800;
-    color: #dca73a;
-    text-transform: uppercase
+.preloader-progress {
+    width: 300px;
+    height: 4px;
+    background: #eaeaea;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.preloader-progress-bar {
+    position: absolute;
+    background: #283891; /* Dark blue color matching your logo */
+    height: 100%;
+    width: 0;
+    border-radius: 2px;
+    animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
+    }
 }
 
 @-webkit-keyframes zoom {
