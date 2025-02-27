@@ -3099,7 +3099,7 @@ hr {
 }
 
 .pricing-card-area .single-card {
-    background: #fcfcfc;
+    background: #cfd4e4;
     padding: 70px 25px;
     border-radius: 6px;
     -webkit-transition: all .4s ease-out 0s;
@@ -3133,7 +3133,7 @@ hr {
 }
 
 .pricing-card-area .single-card .card-bottom ul li {
-    color: #717081;
+    color: #000;
     font-weight: 300;
     margin-bottom: 16px;
     font-size: 16px
