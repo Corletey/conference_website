@@ -36,7 +36,7 @@
 
 .slider-area{
     margin-top: -1px;
-    background-image: url(../img/hero/h1_hero.png);
+    background-image: url(../img/hero/1hero.png);
     background-repeat:no-repeat ;
     background-position: center center;
     background-size: cover;
@@ -213,7 +213,7 @@
         bottom: 80px;
     }
 
-    @media #{$md}, @media #{$sm}, @media #{$xs} {
+    @media #{$md}, #{$sm}, #{$xs} {
         right: 30px;
         bottom: 30px;
     }

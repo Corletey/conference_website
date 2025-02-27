@@ -2016,7 +2016,7 @@ hr {
 
 .preloader-progress-bar {
     position: absolute;
-    background: #283891; /* Dark blue color matching your logo */
+    background: #283891;
     height: 100%;
     width: 0;
     border-radius: 2px;
@@ -2751,7 +2751,7 @@ hr {
 
 .slider-area {
     margin-top: -1px;
-    background-image: url(../img/hero/h1_hero.png);
+    background-image: url(../img/hero/1hero.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover

@@ -1987,7 +1987,7 @@ hr {
 
 .preloader-progress-bar {
     position: absolute;
-    background: #283891; /* Dark blue color matching your logo */
+    background: #283891;
     height: 100%;
     width: 0;
     border-radius: 2px;
