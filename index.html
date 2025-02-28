@@ -47,43 +47,37 @@
         <div class="header-area">
             <div class="main-header header-sticky">
                 <div class="container-fluid">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center justify-content-between d-flex">
                         <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2 col-md-2 d-flex align-items-center">
+                        <div class="col-auto d-flex align-items-center">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/aau-16-gencon-01.png" alt="Logo" class="img-fluid"
-                                        style="max-height: 100px" />
+                                    <img src="assets/img/logo/aau-16-gencon-01.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-10 col-md-10">
-                            <div class="menu-main d-flex align-items-center justify-content-end">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="#home">Home</a></li>
-                                            <li><a href="#about">About</a></li>
-                                            <li><a href="#speakers">Speakers</a></li>
-                                            <li><a href="#schedule">Schedule</a></li>
-                                            <li><a href="#hotels">Hotels</a></li>
-                                            <li><a href="#pricing">Fees</a></li>
-                                            <!-- <li><a href="#exhibition">Exhibition</a></li> -->
-                                            <li><a href="#sponsors">Sponsors</a></li>
-                                            <li><a href="#contact">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                    <a href="#" class="btn header-btn">Get Your Ticket</a>
-                                </div> -->
-                            </div>
+        
+                        <!-- Navigation Menu -->
+                        <div class="col d-flex justify-content-center">
+                            <nav class="main-menu d-none d-lg-block">
+                                <ul id="navigation" class="d-flex align-items-center list-unstyled m-0 gap-4"
+                                    style="display: flex; align-items: center; margin: 0; padding: 0; gap: 20px; list-style: none;">
+                                    <li><a href="#home" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Home</a></li>
+                                    <li><a href="#about" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">About</a></li>
+                                    <li><a href="#pricing" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Registration</a></li>
+                                    <li><a href="#abstract" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Abstract</a></li>
+                                    <li><a href="#speakers" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Speakers</a></li>
+                                    <li><a href="#schedule" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Schedule</a></li>
+                                    <li><a href="#hotels" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Hotels</a></li>
+                                    <li><a href="#sponsors" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Sponsors</a></li>
+                                    <li><a href="#contact" class="nav-link" style="text-decoration: none; color: black; padding: 5px 10px;">Contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
-
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+        
+                        <!-- Mobile Menu (For Small Screens) -->
+                        <div class="col-auto d-block d-lg-none">
+                            <div class="mobile_menu"></div>
                         </div>
                     </div>
                 </div>
@@ -107,14 +101,14 @@
                                         16th Quadrennial General Conference
                                     </h1>
                                     <!-- Hero-btn -->
-                                    <div class="slider-btns">
+                                    <!-- <div class="slider-btns">
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="https://indico.aau.org/e/16gencon"
                                             class="btn hero-btn">Register
                                             Now</a>
                                         <a data-animation="fadeInRight" data-delay="1.0s" href="https://indico.aau.org/e/16gencon"
                                             class="btn hero-btn">Submit
                                             Abstract</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -461,6 +455,222 @@
         </section>
         <!-- About End-->
 
+        <!-- Pricing Card Start -->
+        <section id="pricing" class="pricing-card-area " style="background-color: #f7ca45; padding: 80px 20px; position: relative; overflow: hidden;">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="section-tittle text-center mb-100">
+                            <h2 style="font-size: 3rem; font-weight: 700; color: #31118F;">Conference Fee</h2>
+                            <p>
+                                The registration fee covers participation in all sessions, access to conference materials and proceedings, and attendance at networking events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Early Bird Pricing with Countdown -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span>Early Bird (AAU Members)</span>
+                                <h4>US$ 250</h4>
+                                <p class="countdown" id="early-bird-timer"></p>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Discounted rate for AAU members</li>
+                                    <li>Valid until April 25, 2025</li>
+                                    <li>Full access to conference sessions</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                   <!-- PhD and Other Students Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span>PhD and Other Students</span>
+                                <h4>US$ 150</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Special discounted rate for students</li>
+                                    <li>Valid student ID required for verification</li>
+                                    <li>Access to all conference sessions</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- AAU Members Pricing -->
+                     <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span>AAU Members (Standard)</span>
+                                <h4>US$ 350</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Standard fee for AAU Members after April 25, 2025</li>
+                                    <li>Participation for more than 2 per university: US$ 200 each</li>
+                                    <li>Access to all conference sessions</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Non-AAU Members Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card active text-center mb-30">
+                            <div class="card-top">
+                                <span>Non-AAU Members</span>
+                                <h4>US$ 350</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Full access to all conference sessions</li>
+                                    <li>Networking with participants</li>
+                                    <li>Conference materials and presentations</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Industry Stakeholders Pricing -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <span>Other HE Stakeholders</span>
+                                <h4>US$ 500</h4>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Participation for industry professionals</li>
+                                    <li>Access to networking and exhibition sessions</li>
+                                    <li>Conference materials and presentations</li>
+                                    <li>Lunch and Tea/coffee breaks</li>
+                                </ul>
+                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Card End -->
+
+        <!-- Abstract Submission Section Start -->
+        <section id="abstract" style="background-color: #ffffff; padding: 80px 0;">
+            <div class="container">
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="section-tittle" style="font-size: 3rem; font-weight: 700; color: #26264B;">Call for Abstracts</h2>
+                    <p style="font-size: 18px; color: #000;">
+                        Join us in transforming higher education in Africa through innovative research 
+                        and practical solutions.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <!-- Left Section (Call for Submissions & Guidelines) -->
+                    <div class="col-lg-7">
+                        <!-- Call for Submissions -->
+                        <div style="background: #f0f2f5; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+                            <h3 style="font-size: 22px; font-weight: bold; color: #1e2a47;">Call for Submissions</h3>
+                            <p style="font-size: 16px; color: #000;">
+                                We invite researchers, policymakers, educators, and practitioners to contribute to the 
+                                transformation of higher education in Africa by submitting their abstracts, papers, and case 
+                                studies.
+                            </p>
+                            <p style="font-size: 16px; color: #000;">
+                                Your submissions should align with the conference sub-themes and provide innovative insights, 
+                                practical solutions, and actionable recommendations for higher education, innovation, and 
+                                sustainable development.
+                            </p>
+                        </div>
+
+                        <!-- Submission Guidelines -->
+                        <div style="background: #f0f2f5; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+                            <h3 style="font-size: 22px; font-weight: bold; color: #1e2a47;">Submission Guidelines</h3>
+                            <ul style="font-size: 16px; color: #000; padding-left: 20px; list-style: none;">
+                                <li style="margin-bottom: 8px;">
+                                    <span style="color: #00c07f; margin-right: 8px;">✓</span> Submissions must clearly state the narrative type, thematic focus, and relevance.
+                                </li>
+                                <li style="margin-bottom: 8px;">
+                                    <span style="color: #00c07f; margin-right: 8px;">✓</span> Include brief bio of presenter(s) and contact information.
+                                </li>
+                                <li style="margin-bottom: 8px;">
+                                    <span style="color: #00c07f; margin-right: 8px;">✓</span> Abstract length: 150-300 words.
+                                </li>
+                                <li style="margin-bottom: 8px;">
+                                    <span style="color: #00c07f; margin-right: 8px;">✓</span> Full paper limit: 6,000 words.
+                                </li>
+                                <li style="margin-bottom: 8px;">
+                                    <span style="color: #00c07f; margin-right: 8px;">✓</span> Submissions accepted in English or French.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Section (Deadlines & Submission Links) -->
+                    <div class="col-lg-5">
+                        <!-- Important Deadlines -->
+                        <div style="background: #1e2a47; color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+                            <h3 style="font-size: 22px; font-weight: bold; color: #4B7FC5;">Important Deadlines</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="font-size: 16px; margin-top: 15px; display: flex; align-items: start;">
+                                    <span style="display: inline-block; width: 24px;">📅</span>
+                                    <div>
+                                        <strong>Abstract Submission:</strong><br>
+                                        March 28, 2025 - 16:30 GMT
+                                    </div>
+                                </li>
+                                <li style="font-size: 16px; margin-top: 15px; display: flex; align-items: start;">
+                                    <span style="display: inline-block; width: 24px;">🔔</span>
+                                    <div>
+                                        <strong>Notification:</strong><br>
+                                        April 18, 2025
+                                    </div>
+                                </li>
+                                <li style="font-size: 16px; margin-top: 15px; display: flex; align-items: start;">
+                                    <span style="display: inline-block; width: 24px;">📌</span>
+                                    <div>
+                                        <strong>Full Paper Submission:</strong><br>
+                                        June 13, 2025 - 16:30 GMT
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Submission Links -->
+                        <div style="background: #e8f0fe; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+                            <h3 style="font-size: 22px; font-weight: bold; color: #1e2a47;">Submission Links</h3>
+                            <a href="https://indico.aau.org/e/16gencon" style="display: block; text-decoration: none; color: #004aad; font-weight: 500; font-size: 16px; margin-top: 15px; background-color: #ffffff; padding: 10px 15px; border-radius: 5px;">
+                                <span style="margin-right: 8px;">🔗</span> Submit Abstract
+                            </a>
+                            <a href="https://blog.aau.org/call-for-abstracts-papers-association-of-african-universities-16th-quadrennial-general-conference-21-25-july-2025-rabat-morocco" style="display: block; text-decoration: none; color: #004aad; font-weight: 500; font-size: 16px; margin-top: 10px; background-color: #ffffff; padding: 10px 15px; border-radius: 5px;">
+                                <span style="margin-right: 8px;">ℹ️</span> Additional Information
+                            </a>
+                        </div>
+                        <!-- Submit Abstract Button -->
+                        <div class="text-center">
+                            <a href="https://indico.aau.org/e/16gencon"style="background: #004aad; color: #ffffff; text-align: center;  text-decoration: none; box-shadow: 0px 4px 8px rgba(0, 74, 173, 0.4);" class="btn mt-50">
+                                Submit Your Abstract Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Abstract Submission Section End -->
+
         <!-- Speakers Start -->
         <section id="speakers" class="team-area pt-180 pb-100 section-bg"
             data-background="assets/img/gallery/section_bg02.png">
@@ -631,7 +841,7 @@
         <!-- Speakers End -->
 
         <!-- Schedule accordion -->
-        <section id="schedule" class="accordion fix section-padding30">
+        <section id="schedule" class="accordion fix" style="padding: 80px 20px; position: relative; overflow: hidden;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-6">
@@ -1459,7 +1669,7 @@
         <!-- Schedule accordion End -->
 
         <!-- Hotels Section-->
-        <section id="hotels" class="py-5 bg-light" style="background-color: #f7f7f7;">
+        <section id="hotels" class="py-5" style="background-color: #F7CA45;">
             <div class="container">
                 <div class="section-tittle text-center mb-5">
                     <h2 class="color: #333">Hotels</h2>
@@ -1806,119 +2016,8 @@
         </section>
         <!-- Video Section End -->
 
-        <!-- Pricing Card Start -->
-        <section id="pricing" class="pricing-card-area section-padding2">
-            <div class="container">
-                <!-- Section Title -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-8">
-                        <div class="section-tittle text-center mb-100">
-                            <h2 style="font-size: 3rem; font-weight: 700;">Conference Fee</h2>
-                            <p>
-                                The registration fee covers participation in all sessions, access to conference materials and proceedings, and attendance at networking events.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Early Bird Pricing with Countdown -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <span>Early Bird (AAU Members)</span>
-                                <h4>US$ 250</h4>
-                                <p class="countdown" id="early-bird-timer"></p>
-                            </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li>Discounted rate for AAU members</li>
-                                    <li>Valid until April 25, 2025</li>
-                                    <li>Full access to conference sessions</li>
-                                    <li>Lunch and Tea/coffee breaks</li>
-                                </ul>
-                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
-                            </div>
-                        </div>
-                    </div>
-                   <!-- PhD and Other Students Pricing -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <span>PhD and Other Students</span>
-                                <h4>US$ 150</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li>Special discounted rate for students</li>
-                                    <li>Valid student ID required for verification</li>
-                                    <li>Access to all conference sessions</li>
-                                    <li>Lunch and Tea/coffee breaks</li>
-                                </ul>
-                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- AAU Members Pricing -->
-                     <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <span>AAU Members (Standard)</span>
-                                <h4>US$ 350</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li>Standard fee for AAU Members after April 25, 2025</li>
-                                    <li>Participation for more than 2 per university: US$ 200 each</li>
-                                    <li>Access to all conference sessions</li>
-                                    <li>Lunch and Tea/coffee breaks</li>
-                                </ul>
-                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Non-AAU Members Pricing -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                        <div class="single-card active text-center mb-30">
-                            <div class="card-top">
-                                <span>Non-AAU Members</span>
-                                <h4>US$ 350</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li>Full access to all conference sessions</li>
-                                    <li>Networking with participants</li>
-                                    <li>Conference materials and presentations</li>
-                                    <li>Lunch and Tea/coffee breaks</li>
-                                </ul>
-                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Industry Stakeholders Pricing -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
-                        <div class="single-card text-center mb-30">
-                            <div class="card-top">
-                                <span>Other HE Stakeholders</span>
-                                <h4>US$ 500</h4>
-                            </div>
-                            <div class="card-bottom">
-                                <ul>
-                                    <li>Participation for industry professionals</li>
-                                    <li>Access to networking and exhibition sessions</li>
-                                    <li>Conference materials and presentations</li>
-                                    <li>Lunch and Tea/coffee breaks</li>
-                                </ul>
-                                <a href="https://pay.aau.org/general-conference-2025" class="black-btn">Register</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pricing Card End -->
-
         <!-- Sponsorship Pricing Card Start -->
-        <section class="pricing-card-area py-5" style="background-color: #1e223d;">
+        <section class="pricing-card-area py-5" style="background-color: #331391;">
             <div class="container">
                 <!-- Section Title -->
                 <div class="row justify-content-center mb-5">
@@ -1998,14 +2097,14 @@
         <!-- Sponsorship Pricing Card End -->
 
         <!-- Exhibition Pricing Card Start -->
-        <section class="pricing-card-area py-5" style="background-color: #331391;">
+        <section class="pricing-card-area py-5" style="background-color: #CFD4E4;">
             <div class="container">
                 <!-- Section Title -->
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-6 col-md-8">
                         <div class="text-center">
-                            <h2 class="display-4 font-weight-bold mb-3" style="color: #ffdb6f;font-size: 3rem; font-weight: 700;">Exhibition Fees</h2>
-                            <p class="lead" style="color: #ffffff;">
+                            <h2 class="display-4 font-weight-bold mb-3" style="color: #2D3544;font-size: 3rem; font-weight: 700;">Exhibition Fees</h2>
+                            <p class="lead" style="color: #112957; font-weight: 500;">
                                 Showcase your innovations at the 16th Quadrennial General Conference in Rabat, Morocco.
                             </p>
                         </div>
@@ -2109,7 +2208,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <p class="text-white font-weight-bold">Contact <a href="mailto:elaari@aau.org" class="text-warning">elaari@aau.org</a> for more information.</p>
+                    <p class="text-white font-weight-bold" style="background-color: #112957; padding: 15px; border-radius: 10px;">Contact <a href="mailto:elaari@aau.org" class="text-warning">elaari@aau.org</a> for more information.</p>
                 </div>
                  
             </div>

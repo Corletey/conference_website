@@ -3113,7 +3113,7 @@ hr {
 }
 
 .pricing-card-area .single-card .card-top {
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 3px solid #f4f4f4;
     margin-bottom: 46px
 }
 
@@ -3161,7 +3161,7 @@ hr {
 }
 
 .pricing-card-area .single-card.active .card-top {
-    border-bottom: 1px solid #fff
+    border-bottom: 5px solid #fff
 }
 
 .pricing-card-area .single-card.active .card-top span {
@@ -3190,7 +3190,7 @@ hr {
 }
 
 .pricing-card-area .single-card:hover .card-top {
-    border-bottom: 1px solid #fff
+    border-bottom: 5px solid #fff
 }
 
 .pricing-card-area .single-card:hover .card-top span {
