@@ -630,82 +630,71 @@
             });
         </script>
         
-        <!-- Pricing Fee Card End -->
         <!-- Registration Modal -->
         <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-color: #31118F; color: white;">
+            <div class="modal-dialog modal-lg" style="max-width: 90%; margin: 1.75rem auto;">
+                <div class="modal-content" style="background-color: #B0B0B0; color: #31118F; max-height: 90vh; overflow-y: auto; border-radius: 12px;">
+                    <div class="modal-header" style="background-color: #31118F; color: #FFFFFF; position: sticky; top: 0; z-index: 1050; border-top-left-radius: 12px; border-top-right-radius: 12px;">
                         <h5 class="modal-title" id="registrationModalLabel" style="font-weight: bold;">Conference Registration</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: none; border: none; color: white; font-size: 1.5rem;">&times;</button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: none; border: none; color: #FFFFFF; font-size: 1.5rem; position: absolute; right: 15px; top: 15px;">&times;</button>
                     </div>
                     <div class="modal-body">
                         <!-- Step 1: Conference Information -->
                         <div id="step1">
-                            <div class="selected-package" style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                            <div class="selected-package" style="background-color: #FFFFFF; padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #31118F;">
                                 <h5 style="color: #31118F; margin-bottom: 10px;">Selected Package</h5>
                                 <p id="selectedFee" style="font-size: 18px; font-weight: bold;"></p>
                             </div>
-
                             <h4 style="color: #31118F; font-weight: bold; margin-bottom: 20px;">About the Conference</h4>
-                            <p style="font-size: 16px; line-height: 1.6; color: #555;">
-                                As Africa strives to address socio-economic challenges and achieve sustainable growth, the transformation of the continent's higher education institutions (HEIs) to drive innovation, address sustainable development goals (SDGs), and empower future generations becomes increasingly critical. The current challenges in higher education in Africa underscore the urgent need for comprehensive reforms and innovative approaches across the continent. The integration of innovation and entrepreneurship to enhance curriculum relevance; investment in research infrastructure; establishment of collaborative research networks; harnessing of digital technologies, particularly the expansion of e-learning platforms and incorporation of ICT in teaching and learning; introduction of industry-driven curriculum to strengthen university-industry linkages; and the establishment of technology transfer offices and business incubation hubs within HEIs are some of the known strategies that act as catalysts for higher education to drive innovation, economic growth, and sustainable development in Africa.
+                            <p style="font-size: 16px; line-height: 1.6; color: #31118F;">
+                                As Africa strives to address socio-economic challenges and achieve sustainable growth, the transformation of the continent's higher education institutions (HEIs) to drive innovation, address sustainable development goals (SDGs), and empower future generations becomes increasingly critical.
                             </p>
-                            
                             <h4 style="color: #31118F; font-weight: bold; margin: 20px 0;">Registration Fees</h4>
-                            <ul style="list-style-type: none; padding-left: 0;">
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">1. Early Bird for AAU Members (by 25th April 2025) – <strong>US$250</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">2. Participation of more than 2 per university – <strong>US$200 each</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">3. Standard fee for AAU Members after deadline – <strong>US$350</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">4. AAU Non-member Universities – <strong>US$350</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">5. Moroccans – <strong>US$200</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">6. PhD and other Students – <strong>US$150</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">7. Up to 2 Students from a Moroccan member Universities - <strong>Free</strong></li>
-                                <li style="padding: 8px 0; border-bottom: 1px solid #eee; font-size: 16px;">8. Corporate Bodies – <strong>US$500</strong></li>
+                            <ul style="list-style-type: none; padding-left: 0; color: #31118F;">
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">1. Early Bird for AAU Members (by 25th April 2025) – <strong>US$250</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">2. Participation of more than 2 per university – <strong>US$200 each</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">3. Standard fee for AAU Members after deadline – <strong>US$350</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">4. AAU Non-member Universities – <strong>US$350</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">5. Moroccans – <strong>US$200</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">6. PhD and other Students – <strong>US$150</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">7. Up to 2 Students from a Moroccan member Universities - <strong>Free</strong></li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #FFFFFF; font-size: 16px;">8. Corporate Bodies – <strong>US$500</strong></li>
                             </ul>
-                            
                             <div class="text-center mt-4">
-                                <button id="nextToStep2" class="btn" style="background-color: #31118F; color: white; padding: 10px 25px; border-radius: 5px; border: none;">Continue to Payment Details</button>
+                                <button id="nextToStep2" class="btn" style="background-color: #31118F; color: #FFFFFF; padding: 10px 25px; border-radius: 5px; border: none; font-weight: bold;">Continue to Payment Details</button>
                             </div>
                         </div>
-                        
                         <!-- Step 2: Bank Details -->
                         <div id="step2" style="display: none;">
                             <h4 style="color: #31118F; font-weight: bold; margin-bottom: 20px;">Payment Details</h4>
-                            
-                            <div style="background-color: #f8f9fa; border-left: 4px solid #31118F; padding: 15px; margin-bottom: 20px;">
+                            <div style="background-color: #FFFFFF; border-left: 4px solid #31118F; padding: 15px; margin-bottom: 20px; color: #31118F;">
                                 <h5 style="font-weight: bold; margin-bottom: 10px;">Option 1: Standard Chartered Bank</h5>
                                 <ul style="list-style-type: none; padding-left: 0;">
-                                    <li style="padding: 4px 0;"><strong>Account Name:</strong> Association of African Universities</li>
-                                    <li style="padding: 4px 0;"><strong>Name of Bank:</strong> Standard Chartered Bank, High Street Branch, Accra-Ghana</li>
-                                    <li style="padding: 4px 0;"><strong>Account Number:</strong> Offshore Dollar A/C # 8700202448801</li>
-                                    <li style="padding: 4px 0;"><strong>Swift Code:</strong> SCBLGHAC</li>
-                                    <li style="padding: 4px 0;"><strong>US Correspondent Bank:</strong> SCB New York</li>
-                                    <li style="padding: 4px 0;"><strong>Swift Code:</strong> SCBLUS33</li>
-                                    <li style="padding: 4px 0;"><strong>ABA#:</strong> 026002561</li>
+                                    <li><strong>Account Name:</strong> Association of African Universities</li>
+                                    <li><strong>Name of Bank:</strong> Standard Chartered Bank, High Street Branch, Accra-Ghana</li>
+                                    <li><strong>Account Number:</strong> Offshore Dollar A/C # 8700202448801</li>
+                                    <li><strong>Swift Code:</strong> SCBLGHAC</li>
+                                    <li><strong>US Correspondent Bank:</strong> SCB New York</li>
+                                    <li><strong>Swift Code:</strong> SCBLUS33</li>
+                                    <li><strong>ABA#:</strong> 026002561</li>
                                 </ul>
                             </div>
-                            
-                            <div style="background-color: #f8f9fa; border-left: 4px solid #31118F; padding: 15px;">
+                            <div style="background-color: #FFFFFF; border-left: 4px solid #31118F; padding: 15px; color: #31118F;">
                                 <h5 style="font-weight: bold; margin-bottom: 10px;">Option 2: Zenith Bank Ghana Limited</h5>
                                 <ul style="list-style-type: none; padding-left: 0;">
-                                    <li style="padding: 4px 0;"><strong>Account Name:</strong> Association of African Universities</li>
-                                    <li style="padding: 4px 0;"><strong>Name of Bank:</strong> Zenith Bank Ghana Limited</li>
-                                    <li style="padding: 4px 0;"><strong>Bank Address:</strong> Head Office Branch, Zenith Height, No. 31 Independence Ave., Accra-Ghana</li>
-                                    <li style="padding: 4px 0;"><strong>Account Number:</strong> Offshore Dollar A/C # 4050121131</li>
-                                    <li style="padding: 4px 0;"><strong>Swift Code:</strong> ZEBLGHAC</li>
+                                    <li><strong>Account Name:</strong> Association of African Universities</li>
+                                    <li><strong>Name of Bank:</strong> Zenith Bank Ghana Limited</li>
+                                    <li><strong>Bank Address:</strong> Head Office Branch, Zenith Height, No. 31 Independence Ave., Accra-Ghana</li>
+                                    <li><strong>Account Number:</strong> Offshore Dollar A/C # 4050121131</li>
+                                    <li><strong>Swift Code:</strong> ZEBLGHAC</li>
                                 </ul>
-                            </div>
-                            
-                            <div class="d-flex justify-content-between mt-4">
-                                <button id="backToStep1" class="btn" style="background-color: #6c757d; color: white; padding: 10px 25px; border-radius: 5px; border: none;">Back</button>
-                                <a href="https://pay.aau.org/general-conference-2025" class="btn" id="proceedToRegistration" style="background-color: #31118F; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none;">Proceed to Registration</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- Registration Section End -->
 
 
