@@ -616,19 +616,6 @@
             </div>
         </section>
         <!-- Pricing Fee Card End -->
-        <!-- Pricing Fee Card Script -->
-        <script>
-            document.querySelectorAll('.register-btn').forEach(button => {
-                button.addEventListener('mouseover', () => {
-                    button.style.backgroundColor = '#FFFFFF';
-                    button.style.color = '#31118F';
-                });
-                button.addEventListener('mouseout', () => {
-                    button.style.backgroundColor = '#31118F';
-                    button.style.color = '#FFFFFF';
-                });
-            });
-        </script>
         
         <!-- Registration Modal -->
         <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
@@ -784,7 +771,7 @@
                             <div style="border-top: 1px solid #31118F; margin: 15px 0 25px 0;"></div>
                             <!-- Submit Abstract Button -->
                             <div style="text-align: center;">
-                                <a href="#" style="display: inline-block; background: #31118F; color: #FFFFFF; padding: 14px 28px; border-radius: 8px; font-size: 17px; font-weight: bold; text-decoration: none; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); transition: all 0.3s ease; border: 2px solid #31118F;">Submit Abstract</a>
+                                <a href="#" class="btn" style="#31118F;">Submit Abstract</a>
                             </div>
                         </div>
                     </div>
@@ -1691,185 +1678,190 @@
                 <!-- End Nav Card -->
             </div>
         </section>
-        <!-- Schedule accordion End -->
+        <!-- Schedule accordion End -->        
 
         <!-- Hotels Section-->
-        <section id="hotels" class="py-10" style="background-color: #F7CA45; padding: 90px 20px;">
+        <section id="hotels" class="py-10" style="background-color: #B0B0B0; padding: 90px 20px;">
             <div class="container">
                 <div class="section-tittle text-center mb-5">
-                    <h2 class="color: #333">Hotels</h2>
-                    <p class="">Participants are advised to make advanced reservations for accommodation at the following hotels</p>
+                    <h2 style="color: #31118F;">Hotels</h2>
+                    <p style="color: #31118F;">Participants are advised to make advanced reservations for accommodation at the following hotels</p>
                 </div>
-            <!-- Important Notice -->
-            <div class="alert alert-warning text-center mb-5" role="alert" style="background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba;">
-                <strong>Important Notice:</strong> Please confirm your reservations <strong>by 30th June 2025</strong>. After this date, accommodation cannot be guaranteed. <br>
-                <strong>Room rates</strong> include bed and breakfast, plus free internet access. <br>
-                Accommodation payments should be made directly to the hotels or through the Local Organising Committee for a discount. <br>
-                If booking directly with hotels, email your proof of payment to: 
-                <a href="mailto:FatimaEzzahra.MOUTIK@um6p.ma" class="text-primary fw-bold">fatimaezzahra.moutik@um6p.ma</a>
-            </div>
-
-                <!-- First Hotels Row -->
-                <div class="row mb-5">
-                    <!-- Ritz-Carlton -->
+        
+                <!-- Important Notice -->
+                <div class="alert text-center mb-5" role="alert" style="background-color: #FFFFFF; color: #31118F; border: 1px solid #31118F;">
+                    <strong>Important Notice:</strong> Please confirm your reservations <strong>by 30th June 2025</strong>. After this date, accommodation cannot be guaranteed. <br>
+                    <strong>Room rates</strong> include bed and breakfast, plus free internet access. <br>
+                    Accommodation payments should be made directly to the hotels or through the Local Organising Committee for a discount. <br>
+                    If booking directly with hotels, email your proof of payment to: 
+                    <a href="mailto:FatimaEzzahra.MOUTIK@um6p.ma" style="color: #31118F; font-weight: bold;">fatimaezzahra.moutik@um6p.ma</a>
+                </div>
+        
+                <!-- First Row of Hotels (Always Visible) -->
+                <div class="row">
+                    <!-- Hotel 1 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                        <div class="card h-100 border-0 shadow-sm" style="background-color: #FFFFFF;">
                             <div class="position-relative">
                                 <img src="assets/img/hotels/ritz-carlton-rabat-dar-es-salam.jpg" alt="The Ritz-Carlton Rabat" class="card-img-top" style="height: 250px; object-fit: cover;">
                             </div>
                             <div class="card-body text-center">
-                                <h5 class="card-title mb-3">The Ritz-Carlton Rabat, Dar Es Salam</h5>
-                                <p class="mb-3 text-primary fw-bold">US$410/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5380-80808</small></p>
-                                <a href="http://www.ritzcarlton.com" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                                <h5 class="card-title mb-3" style="color: #31118F;">The Ritz-Carlton Rabat, Dar Es Salam</h5>
+                                <p class="mb-3" style="color: #31118F; font-weight: bold;">US$410/night</p>
+                                <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5380-80808</small></p>
+                                <a href="http://www.ritzcarlton.com" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Sofitel -->
+        
+                    <!-- Hotel 2 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                        <div class="card h-100 border-0 shadow-sm" style="background-color: #FFFFFF;">
                             <div class="position-relative">
                                 <img src="assets/img/hotels/sofitel.jpg" alt="Sofitel Rabat" class="card-img-top" style="height: 250px; object-fit: cover;">
                             </div>
                             <div class="card-body text-center">
-                                <h5 class="card-title mb-3">Sofitel Rabat Jardin Des Roses</h5>
-                                <p class="mb-3 text-primary fw-bold">US$280/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5376-75656</small></p>
-                                <a href="https://sofitel.accor.com/en/hotels/6813.html" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                                <h5 class="card-title mb-3" style="color: #31118F;">Sofitel Rabat Jardin Des Roses</h5>
+                                <p class="mb-3" style="color: #31118F; font-weight: bold;">US$280/night</p>
+                                <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5376-75656</small></p>
+                                <a href="https://sofitel.accor.com/en/hotels/6813.html" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- La Tour Hassan -->
+        
+                    <!-- Hotel 3 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                        <div class="card h-100 border-0 shadow-sm" style="background-color: #FFFFFF;">
                             <div class="position-relative">
                                 <img src="assets/img/hotels/hassan_palace.jpg" alt="La Tour Hassan Palace" class="card-img-top" style="height: 250px; object-fit: cover;">
                             </div>
                             <div class="card-body text-center">
-                                <h5 class="card-title mb-3">La Tour Hassan Palace</h5>
-                                <p class="mb-3 text-primary fw-bold">US$230/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5372-39000</small></p>
-                                <a href="http://tourhassanpalace.com/en/home/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                                <h5 class="card-title mb-3" style="color: #31118F;">La Tour Hassan Palace</h5>
+                                <p class="mb-3" style="color: #31118F; font-weight: bold;">US$230/night</p>
+                                <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5372-39000</small></p>
+                                <a href="http://tourhassanpalace.com/en/home/" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Second Hotels Row -->
+        
+                <!-- Hidden Hotels (Second Row) -->
+                <div id="hiddenHotels" style="display: none;">
+                    <!-- Second Row of Hotels -->
                     <div class="row mb-5">
-                    <!-- Executive Boutique -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/executive-boutique-hotel-rabat.webp" alt="Executive Boutique Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <!-- Executive Boutique -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/executive-boutique-hotel-rabat.webp" alt="Executive Boutique Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">Executive Boutique Hotel</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$190/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5372-78860</small></p>
+                                    <a href="http://www.executiveboutiquehotels.com" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">Executive Boutique Hotel</h5>
-                                <p class="mb-3 text-primary fw-bold">US$190/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5372-78860</small></p>
-                                <a href="http://www.executiveboutiquehotels.com" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                        </div>
+        
+                        <!-- MGallery Le Diwan -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/mgallery-le-diwan.jpg" alt="MGallery Le Diwan" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">MGallery Le Diwan</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$150/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5372-62727</small></p>
+                                    <a href="https://shorturl.at/Xdg2G" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- BRĂAT Hotel -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/braat-hotel.jpg" alt="BRĂAT Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">BRĂAT Hôtel</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$130/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5380-05858</small></p>
+                                    <a href="https://braat.ma/" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- ONOMO Hotel -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/onomo-hotel-terminus.webp" alt="ONOMO Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">ONOMO Hotel</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$100/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5372-12900</small></p>
+                                    <a href="https://shorturl.at/X2LD1" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- MGallery Le Diwan -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/mgallery-le-diwan.jpg" alt="MGallery Le Diwan" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">MGallery Le Diwan</h5>
-                                <p class="mb-3 text-primary fw-bold">US$150/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5372-62727</small></p>
-                                <a href="https://shorturl.at/Xdg2G" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BRĂAT Hotel -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/braat-hotel.jpg" alt="BRĂAT Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">BRĂAT Hôtel</h5>
-                                <p class="mb-3 text-primary fw-bold">US$130/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5380-05858</small></p>
-                                <a href="https://braat.ma/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+        
+                    <!-- Third Row of Hotels -->
+                    <div class="row">
+                        <!-- Ibis Rabat -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/ibis-rabat-agdal.jpg" alt="Ibis Rabat" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">Ibis Rabat Agdal</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$80/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5371-31700</small></p>
+                                    <a href="https://shorturl.at/mfbfR" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- ONOMO Hotel -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/onomo-hotel-terminus.webp" alt="ONOMO Hotel" class="card-img-top" style="height: 200px; object-fit: cover;">
+        
+                        <!-- Le Pietri -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/le-pietri-urban-hotel.webp" alt="Le Pietri" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">Le Pietri Urban Hotel</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$76/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: +212 5377-07820</small></p>                        
+                                    <a href="https://lepietri.com/" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">ONOMO Hotel</h5>
-                                <p class="mb-3 text-primary fw-bold">US$100/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5372-12900</small></p>
-                                <a href="https://shorturl.at/X2LD1" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
+                        </div>
+        
+                        <!-- AZ Hotel des Arts -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="assets/img/hotels/az-hotel-des-arts.jpeg" alt="AZ Hotel des Arts" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3" style="color: #31118F;">AZ Hôtel des Arts</h5>
+                                    <p class="mb-3" style="color: #31118F; font-weight: bold;">US$70/night</p>
+                                    <p class="mb-3" style="font-size: 1.3rem; color: #B0B0B0;"><small>Phone: N/A</small></p> 
+                                    <a href="https://azhteldesarts.morocco-ma.website/fr/" target="_blank" class="btn btn-outline-primary btn-sm" style="background-color: #31118F; color: #FFFFFF; border: none;">Visit Website</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Third Hotels Row -->
-                <div class="row">
-                    <!-- Ibis Rabat -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/ibis-rabat-agdal.jpg" alt="Ibis Rabat" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">Ibis Rabat Agdal</h5>
-                                <p class="mb-3 text-primary fw-bold">US$80/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;"><small class="text-muted">Phone: +212 5371-31700</small></p>
-                                <a href="https://shorturl.at/mfbfR" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Le Pietri -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/le-pietri-urban-hotel.webp" alt="Le Pietri" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">Le Pietri Urban Hotel</h5>
-                                <p class="mb-3 text-primary fw-bold">US$76/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;">
-                                    <small class="text-muted">Phone: +212 5377-07820</small>
-                                </p>                        
-                                <a href="https://lepietri.com/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- AZ Hotel des Arts -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="position-relative">
-                                <img src="assets/img/hotels/az-hotel-des-arts.jpeg" alt="AZ Hotel des Arts" class="card-img-top" style="height: 200px; object-fit: cover;">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mb-3">AZ Hôtel des Arts</h5>
-                                <p class="mb-3 text-primary fw-bold">US$70/night</p>
-                                <p class="mb-3" style="font-size: 1.3rem; font-weight: 500;">
-                                    <small class="text-muted">Phone: N/A</small>
-                                </p> 
-                                <a href="https://azhteldesarts.morocco-ma.website/fr/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
+        
+                <!-- Load More Button -->
+                <div class="text-center mt-4">
+                    <button id="loadMoreBtn" class="btn" style="background-color: #31118F; color: #FFFFFF;">Load More</button>
                 </div>
             </div>
         </section>
@@ -2758,6 +2750,27 @@
             }, 1000);
         }
         window.onload = startCountdown;
+    </script>
+
+    <!-- Pricing Fee Card Script -->
+    <script>
+        document.querySelectorAll('.register-btn').forEach(button => {
+           button.addEventListener('mouseover', () => {
+           button.style.backgroundColor = '#FFFFFF';
+            button.style.color = '#31118F';
+            });
+            button.addEventListener('mouseout', () => {
+            button.style.backgroundColor = '#31118F';
+            button.style.color = '#FFFFFF';
+            });
+        });
+    </script>
+
+    <!-- JavaScript for Load More Hotels -->
+    <script>
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {                document.getElementById('hiddenHotels').style.display = 'block';
+        document.getElementById('loadMoreBtn').style.display = 'none';
+        });
     </script>
 
     <!-- contact js -->
