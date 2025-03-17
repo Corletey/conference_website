@@ -2392,7 +2392,7 @@
                                     <li class="mb-3"><i class="fas fa-tv mr-2" style="color: #331391;"></i> Profiling in
                                         Conference Brochure, Reports & Programme</li>
                                     <li class="mb-3"><i class="fas fa-globe mr-2" style="color: #331391;"></i> Six
-                                        months of visibility on the event’s portal</li>
+                                        months of visibility on the event's portal</li>
                                 </ul>
                                 <a href="https://forms.office.com/r/zu79YvR1k2" target="_blank"
                                     class="btn btn-lg btn-block mt-auto text-white"
@@ -2455,13 +2455,82 @@
                         </div>
                     </div>
                 </div>
-                <p style="text-align: center;"><a class="btn mt-50"
-                        style="color: #31118F; font-weight: bold; background-color: #ffffff;"
-                        href="https://repository.aau.org/index.php/s/aZ5piEDZQTrD2os" target="_blank"><strong>View Full
-                            Sponsorship Package</strong></a></p>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-12 text-center">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <a class="btn btn-lg m-2" style="color: #31118F; font-weight: bold; background-color: #ffffff;"
+                                href="https://repository.aau.org/index.php/s/aZ5piEDZQTrD2os" target="_blank">
+                                <strong>View Full Sponsorship Package</strong>
+                            </a>
+                            <button class="btn btn-lg m-2" style="color: #ffffff; font-weight: bold; background-color: #ffdb6f; border: none;"
+                                data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
+                                <strong>Apply or Pay for Sponsorship</strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Sponsorship Pricing Card End -->
+
+        <!-- Bank Details Modal -->
+        <div class="modal fade" id="bankDetailsModal" tabindex="-1" aria-labelledby="bankDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered mx-auto" style="max-width: 90%;">
+                <div class="modal-content" style="background-color: #CFD4E4; color: #31118F; max-height: 90vh; overflow-y: auto; border-radius: 12px;">
+                    <div class="modal-header" style="
+                        background-color: #31118F; padding-top: 30px; color: #FFFFFF; position: sticky; top: 0; border-top-left-radius: 12px; border-top-right-radius: 12px;
+                    ">
+                        <h5 class="modal-title" id="registrationModalLabel" style="font-weight: bold; color: #FFFFFF; font-size: 1.5rem;">
+                            Sponsorship Payment Details
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: none; border: none;color: #FFFFFF;
+                                font-size: 2.5rem; position: absolute; right: 15px; top: 15px;
+                            ">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body p-3 p-md-4">
+                        <h4 class="text-center mb-4" style="color: #31118F; font-weight: bold;">Bank Transfer Information</h4>
+                        
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-body" style="background-color: #FFFFFF; border-left: 4px solid #31118F;">
+                                <h5 style="font-weight: bold; color: #31118F; margin-bottom: 15px;">Option 1: Standard Chartered Bank</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Account Name:</strong> Association of African Universities</li>
+                                    <li class="mb-2"><strong>Name of Bank:</strong> Standard Chartered Bank, High Street Branch, Accra-Ghana</li>
+                                    <li class="mb-2"><strong>Account Number:</strong> Offshore Dollar A/C # 8700202448801</li>
+                                    <li class="mb-2"><strong>Swift Code:</strong> SCBLGHAC</li>
+                                    <li class="mb-2"><strong>US Correspondent Bank:</strong> SCB New York</li>
+                                    <li class="mb-2"><strong>Swift Code:</strong> SCBLUS33</li>
+                                    <li class="mb-2"><strong>ABA#:</strong> 026002561</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body" style="background-color: #FFFFFF; border-left: 4px solid #31118F;">
+                                <h5 style="font-weight: bold; color: #31118F; margin-bottom: 15px;">Option 2: Zenith Bank Ghana Limited</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Account Name:</strong> Association of African Universities</li>
+                                    <li class="mb-2"><strong>Name of Bank:</strong> Zenith Bank Ghana Limited</li>
+                                    <li class="mb-2"><strong>Bank Address:</strong> Head Office Branch, Zenith Height, No. 31 Independence Ave., Accra-Ghana</li>
+                                    <li class="mb-2"><strong>Account Number:</strong> Offshore Dollar A/C # 4050121131</li>
+                                    <li class="mb-2"><strong>Swift Code:</strong> ZEBLGHAC</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="alert alert-info mt-4" role="alert" style="background-color: #e8f4f8; color: #31118F; border-color: #31118F;">
+                            <i class="fas fa-info-circle me-2"></i> After making your payment, please send your transaction details to <strong>finance@aau.org</strong> with the subject line "Sponsorship Payment - [Your Organization Name]".
+                        </div> -->
+                        
+                        <div class="text-center mt-4">
+                            <button type="button" class="btn btn-lg" data-bs-dismiss="modal" style="background-color: #31118F; color: #FFFFFF; border-radius: 5px; font-weight: bold;">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Exhibition Pricing Card Start -->
         <section class="pricing-card-area" style="background-color: #CFD4E4; padding: 50px 20px;">
