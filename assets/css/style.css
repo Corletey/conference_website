@@ -150,7 +150,7 @@ h6 {
 p {
     font-family: "Roboto", sans-serif;
     color: #10285d;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     margin-bottom: 15px;
     font-weight: normal
@@ -3173,7 +3173,7 @@ hr {
 }
 
 .pricing-card-area .single-card.active .card-bottom ul li {
-    color: #fff
+    color: #000
 }
 
 .pricing-card-area .single-card.active .card-bottom .black-btn {
