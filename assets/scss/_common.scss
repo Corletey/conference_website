@@ -252,6 +252,9 @@ hr {
 	border-radius: 0px;
 
 	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 0;
@@ -305,7 +308,7 @@ hr {
 .hero-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #331391 !important;
+	color: #292E5E !important;
 	&::before{
 		background: #e6c35c;
 	}
@@ -313,13 +316,13 @@ hr {
 .white-btn {
 	padding: 30px 39px;
 	background: #fff;
-	color: #331391 !important;
+	color: #292E5E !important;
 }
 .black-btn {
 	padding: 14px 35px;
 	background: #000;
 	&::before{
-		background: #331391;
+		background: #292E5E;
 	}
 }
 
@@ -517,6 +520,7 @@ hr {
 	-o-animation-duration: 2s;
 	-o-animation-iteration-count: infinite;
 	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
 	}
   @-webkit-keyframes float-bob {
 	0% {
@@ -528,6 +532,18 @@ hr {
 	100% {
 	  -webkit-transform: translateY(-20px);
 	  transform: translateY(-20px); } }
+
+  @keyframes float-bob {
+	0% {
+	  -webkit-transform: translateY(-20px);
+	  transform: translateY(-20px); }
+	50% {
+	  -webkit-transform: translateY(-10px);
+	  transform: translateY(-10px); }
+	100% {
+	  -webkit-transform: translateY(-20px);
+	  transform: translateY(-20px); } }
+
 	  
 /* heartbeat */
 	.heartbeat {
@@ -535,6 +551,12 @@ hr {
 	}
 
 	@-webkit-keyframes heartbeat {
+		to {
+			-webkit-transform: scale(1.03);
+			transform: scale(1.03);
+		}
+	}
+	@keyframes heartbeat {
 		to {
 			-webkit-transform: scale(1.03);
 			transform: scale(1.03);

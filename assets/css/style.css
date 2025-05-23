@@ -21,7 +21,7 @@
 }
 
 .theme-bg {
-    background: #331391
+    background: #292E5E
 }
 
 .brand-bg {
@@ -41,30 +41,30 @@
 }
 
 .theme-color {
-    color: #331391
+    color: #292E5E
 }
 
 .boxed-btn {
     background: #fff;
-    color: #331391 !important;
+    color: #292E5E !important;
     display: inline-block;
     padding: 18px 44px;
     font-family: "Sarabun", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #331391;
+    border: 1px solid #292E5E;
     letter-spacing: 3px;
     text-align: center;
-    color: #331391;
+    color: #292E5E;
     text-transform: uppercase;
     cursor: pointer
 }
 
 .boxed-btn:hover {
-    background: #331391;
+    background: #292E5E;
     color: #fff !important;
-    border: 1px solid #331391
+    border: 1px solid #292E5E
 }
 
 .boxed-btn:focus {
@@ -394,7 +394,7 @@ hr {
 }
 
 .btn {
-    background: #331391;
+    background: #292E5E;
     padding: 27px 44px;
     color: #fff;
     cursor: pointer;
@@ -459,7 +459,7 @@ hr {
 .hero-btn {
     padding: 30px 39px;
     background: #fff;
-    color: #331391 !important
+    color: #292E5E !important
 }
 
 .hero-btn::before {
@@ -469,7 +469,7 @@ hr {
 .white-btn {
     padding: 30px 39px;
     background: #fff;
-    color: #331391 !important
+    color: #292E5E !important
 }
 
 .black-btn {
@@ -478,7 +478,7 @@ hr {
 }
 
 .black-btn::before {
-    background: #331391
+    background: #292E5E
 }
 
 .submit-btn2 {
@@ -539,7 +539,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #331391;
+    background: #292E5E;
     z-index: -1;
     transition: transform 0.5s;
     transition-timing-function: ease;
@@ -560,7 +560,7 @@ hr {
 
 #scrollUp,
 #back-top {
-    background: #331391;
+    background: #292E5E;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -1907,10 +1907,28 @@ hr {
     -o-animation-name: float-bob;
     -o-animation-duration: 2s;
     -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear
 }
 
 @-webkit-keyframes float-bob {
+    0% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px)
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    100% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px)
+    }
+}
+
+@keyframes float-bob {
     0% {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px)
@@ -1932,6 +1950,13 @@ hr {
 }
 
 @-webkit-keyframes heartbeat {
+    to {
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03)
+    }
+}
+
+@keyframes heartbeat {
     to {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
@@ -2485,7 +2510,7 @@ hr {
 }
 
 .theme-bg {
-    background: #331391
+    background: #292E5E
 }
 
 .brand-bg {
@@ -2505,7 +2530,7 @@ hr {
 }
 
 .theme-color {
-    color: #331391
+    color: #292E5E
 }
 
 .header-area .main-header {
@@ -2577,7 +2602,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul li:hover>a {
-    color: #331391
+    color: #292E5E
 }
 
 .header-area .main-header .main-menu ul ul.submenu {
@@ -2610,7 +2635,7 @@ hr {
 }
 
 .header-area .main-header .main-menu ul ul.submenu>li>a:hover {
-    color: #331391;
+    color: #292E5E;
     background: none
 }
 
@@ -2671,7 +2696,7 @@ hr {
 }
 
 .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-    background-color: #331391 !important
+    background-color: #292E5E !important
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav {
@@ -2680,7 +2705,7 @@ hr {
 
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #331391
+    color: #292E5E
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav a {
@@ -3144,7 +3169,7 @@ hr {
 }
 
 .pricing-card-area .single-card.active {
-    background: #31118f;
+    background: #292E5E;
     transform: scale(1.2)
 }
 
@@ -3178,7 +3203,7 @@ hr {
 
 .pricing-card-area .single-card.active .card-bottom .black-btn {
     background: #fff;
-    color: #331391 !important
+    color: #292E5E !important
 }
 
 .pricing-card-area .single-card.active .card-bottom .black-btn::before {
@@ -3186,7 +3211,7 @@ hr {
 }
 
 .pricing-card-area .single-card:hover {
-    background: #31118f
+    background: #292E5E
 }
 
 .pricing-card-area .single-card:hover .card-top {
@@ -3208,7 +3233,7 @@ hr {
 .pricing-card-area .single-card:hover .card-bottom .black-btn {
     padding: 14px 35px;
     background: #fff;
-    color: #331391 !important
+    color: #292E5E !important
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3354,7 +3379,7 @@ hr {
 }
 
 .accordion .accordion-wrapper .card-header a span {
-    color: #331391;
+    color: #292E5E;
     font-size: 16px;
     font-weight: 800
 }
@@ -3408,7 +3433,7 @@ hr {
     position: absolute;
     height: 15px;
     width: 15px;
-    background: #331391;
+    background: #292E5E;
     content: "";
     left: 0;
     right: 0;
@@ -3423,7 +3448,7 @@ hr {
 
 .accordion .nav-tabs .nav-item {
     display: block;
-    color: #331391;
+    color: #292E5E;
     font-size: 24px;
     font-weight: 700
 }
@@ -3436,7 +3461,7 @@ hr {
 
 .accordion .nav-tabs .nav-item.show .nav-link,
 .accordion .nav-tabs .nav-link.active {
-    background: #331391;
+    background: #292E5E;
     color: #fff;
     -webkit-transition: all 0s ease-out 0s;
     -moz-transition: all 0s ease-out 0s;
@@ -3674,15 +3699,15 @@ hr {
 }
 
 .team-area .single-team .team-caption2 h3 a {
-    color: #331391
+    color: #292E5E
 }
 
 .team-area .single-team .team-caption2 h3 a:hover {
-    color: #331391
+    color: #292E5E
 }
 
 .team-area .single-team .team-caption2 p {
-    color: #331391
+    color: #292E5E
 }
 
 .team-area .single-team:hover .team-img img {
@@ -3747,7 +3772,7 @@ hr {
 }
 
 .footer-area .footer-social2 a:hover {
-    background: #331391;
+    background: #292E5E;
     color: #7f7f7f;
     border: 1px solid transparent
 }
@@ -3846,13 +3871,13 @@ hr {
     border: 0;
     cursor: pointer;
     padding: 13px 22px;
-    background: #331391;
+    background: #292E5E;
     line-height: 1;
     border-radius: 0 3px 3px 0
 }
 
 .footer-area .info.error {
-    color: #331391
+    color: #292E5E
 }
 
 .footer-bottom-area {
@@ -3885,11 +3910,11 @@ hr {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #331391
+    color: #292E5E
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #331391
+    color: #292E5E
 }
 
 .footer-bottom-area .footer-copy-right p a:hover {
@@ -3898,7 +3923,7 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .footer-bottom-area .footer-social {
-        float: left
+        float: left;
     }
 }
 
@@ -3917,7 +3942,7 @@ hr {
 .footer-bottom-area .footer-social a {
     color: #fff;
     font-size: 14px;
-    padding-left: 25px
+    padding-left: 25px;
 }
 
 .footer-bottom-area .footer-social a i {
@@ -4089,7 +4114,7 @@ hr {
 }
 
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
-    color: #331391
+    color: #292E5E
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4144,8 +4169,9 @@ hr {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #331391 0%, #331391 99%);
+    background: -webkit-linear-gradient(131deg, #292E5E 0%, #292E5E 99%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     transition: .4s
@@ -4591,7 +4617,7 @@ hr {
 }
 
 .blog_details a:hover {
-    color: #331391
+    color: #292E5E
 }
 
 .blog_details h2 {
@@ -4649,7 +4675,7 @@ hr {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #331391;
+    background-color: #292E5E;
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -4731,7 +4757,7 @@ hr {
 }
 
 .blog_right_sidebar .search_widget .input-group button {
-    background: #331391;
+    background: #292E5E;
     border-left: 0;
     border: 1px solid #f0e9ff;
     padding: 4px 15px;
@@ -4849,7 +4875,7 @@ hr {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #331391;
+    background: #292E5E;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -5060,7 +5086,7 @@ hr {
 }
 
 .single-post-area .blog-author a:hover {
-    color: #331391
+    color: #292E5E
 }
 
 .single-post-area .blog-author p {
@@ -5676,6 +5702,7 @@ hr {
     cursor: pointer;
     background: transparent;
     border: 0;
+    appearance: none;
     -webkit-appearance: none;
     display: block;
     outline: none;
