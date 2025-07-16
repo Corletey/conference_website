@@ -11,7 +11,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-    <!-- CSS here -->
+    <!-- Sponsor Logos CSS -->
          <style>
         .sponsors-slider {
             background: #2C315F;
@@ -42,7 +42,7 @@
         .slider-track {
             display: flex;
             animation: slide 40s linear infinite;
-            width: calc(200px * 34); /* 17 logos × 2 for seamless loop */
+            width: calc(200px * 34); /* All logos × 2 for seamless loop */
         }
 
         .slider-track:hover {
@@ -71,7 +71,7 @@
         }
 
         .logo-item img:hover {
-            transform: scale(2.05);
+            transform: scale(1.5);
             box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
         }
 
@@ -1031,6 +1031,32 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Hon. Dr. Fatima Ezzahra Moutik -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets\img\gallery\Prof_Idris_Rai.jpg" alt="Prof Idris A. Rai"
+                                    style="height: 250px; object-fit: cover;" />
+                                <!-- Blog Social -->
+                                <ul class="team-social">
+                                    <li>
+                                        <a
+                                            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/in/fatima-ezzahra-moutik-0b8b1a1b/"><i
+                                                class="fab fa-linkedin"></i></a>
+                                    </li>
+                                    <!-- <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li> -->
+                                    <li>
+                                        <a href="https://www.enssup.gov.ma/en/biographie-de-madame-la-ministre"><i class="fas fa-globe"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Prof Idris A. Rai</a></h3>
+                                <p>Deputy Executive Secretary at IUCEA</p>
+                            </div>
+                        </div>
                     <!-- 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-team mb-30">
@@ -2468,6 +2494,9 @@
                     <div class="slider-track">
                         <!-- First set of logos -->
                         <div class="logo-item">
+                            <img src="" alt="null">
+                        </div>
+                        <div class="logo-item">
                             <img src="assets/img/logo/logo.png" alt="AAU Logo">
                         </div>
                         <div class="logo-item">
@@ -2517,9 +2546,21 @@
                         </div>
                         <div class="logo-item">
                             <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets\img\logo\PRB_logo.jpg" alt="PRB Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
                         </div>
 
                         <!-- Duplicate set for seamless loop -->
+                         <div class="logo-item">
+                            <img src="" alt="null">
+                        </div>
                         <div class="logo-item">
                             <img src="assets/img/logo/logo.png" alt="AAU Logo">
                         </div>
@@ -2570,6 +2611,15 @@
                         </div>
                         <div class="logo-item">
                             <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets\img\logo\PRB_logo.jpg" alt="PRB Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
                         </div>
                     </div>
                 </div>
@@ -3187,7 +3237,6 @@
                     behavior: 'smooth'
                 });
 
-                // Close the mobile menu after clicking (you might need to adjust this based on your mobile menu implementation)
                 document.querySelector('.mobile_menu').classList.remove('show');
             });
         });
