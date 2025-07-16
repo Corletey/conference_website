@@ -12,6 +12,117 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <!-- CSS here -->
+         <style>
+        .sponsors-slider {
+            background: #2C315F;
+            padding: 50px 0px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section-tittle h2 {
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .section-tittle p {
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .slider-track {
+            display: flex;
+            animation: slide 40s linear infinite;
+            width: calc(200px * 34); /* 17 logos × 2 for seamless loop */
+        }
+
+        .slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        .logo-item {
+            flex: 0 0 200px;
+            height: 120px;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-item img {
+            width: 100%;
+            max-width: 180px;
+            height: 100px;
+            object-fit: contain;
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #292E5E;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-item img:hover {
+            transform: scale(2.05);
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Gradient fade effects on edges */
+        .slider-container::before,
+        .slider-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .slider-container::before {
+            left: 0;
+            background: linear-gradient(to right, #2C315F, transparent);
+        }
+
+        .slider-container::after {
+            right: 0;
+            background: linear-gradient(to left, #2C315F, transparent);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo-item {
+                flex: 0 0 150px;
+            }
+            
+            .logo-item img {
+                max-width: 130px;
+                height: 80px;
+            }
+            
+            .slider-track {
+                width: calc(150px * 34);
+            }
+        }
+    </style>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/slicknav.css" />
@@ -2339,72 +2450,133 @@
         <!-- </section> -->
         <!-- Special Session Section End -->
 
+
+
         <!-- Sponsors Area Start-->
-        <section class="work-company section-padding30" style="background: #2C315F; padding: 50px 20px;">
+        <section class="sponsors-slider">
             <div class="container">
-                <div class="row align-items-center">
-                    <!-- Left Column (Text) -->
-                    <div class="col-lg-5 col-md-12 text-lg-start text-center mb-4 mb-lg-0">
-                        <div class="section-tittle section-tittle2">
-                            <h2 style="color: #FFFFFF;">Our Sponsors</h2>
-                            <p style="color: #FFFFFF; font-size: 1.2rem; font-weight: 500;">
-                                We are proud to partner with these incredible organizations.
-                            </p>
+                <!-- Section Title -->
+                <div class="section-tittle section-tittle2 mb-5 text-center w-100">
+                    <h2 style="color: #FFFFFF;">Our Sponsors</h2>
+                    <p style="color: #FFFFFF; font-size: 1.2rem; font-weight: 500;">
+                    We are proud to partner with these incredible organizations.
+                    </p>
+                </div>
+
+                <!-- Slider Container -->
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <!-- First set of logos -->
+                        <div class="logo-item">
+                            <img src="assets/img/logo/logo.png" alt="AAU Logo">
                         </div>
-                    </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
+                        </div>
 
-                    <!-- Right Column (Sponsor Logos) -->
-                    <div class="col-lg-7 col-md-12">
-                        <div class="row justify-content-center">
-                            <!-- First Row -->
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/logo/logo.png" alt="AAU Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets\img\logo\crossref-logo-200.svg" alt="CrossRef Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets\img\logo\Trinka_Logo.png" alt="Trinka Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets\img\logo\icann-logo.jpg" alt="ICANN Logo"
-                                    style="width: 200px; height: 120px; object-fit: contain; background: #FFFFFF; padding: 10px; border-radius: 5px; border: 1px solid #292E5E;">
-
-                            <!-- Second Row -->
-                            <!-- <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/logo/obreal_oficial.png" alt="OBREAL Logo"
-                                    style="width: 160px; height: 100px; object-fit: contain; background: white; padding: 10px; border-radius: 5px;">
-                            </div> -->
-                           <!-- <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/gallery/perivoli.png" alt="Perivoli"
-                                    style="width: 180px; height: 100px; object-fit: contain; background: white; padding: 10px; border-radius: 5px;">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
-                                <img src="assets/img/gallery/obreal.jpeg" alt="OBREAL"
-                                    style="width: 180px; height: 100px; object-fit: contain; background: white; padding: 10px; border-radius: 5px;">
-                            </div> -->
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="logo-item">
+                            <img src="assets/img/logo/logo.png" alt="AAU Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Sponsors Area End-->
-
+>
         <!-- Contact Area Start -->
         <section id="contact" class="contact-section" style="padding: 50px 20px;">
             <div class="container">
