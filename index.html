@@ -11,8 +11,8 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-    <!-- Sponsor Logos CSS -->
-         <style>
+   <!-- Sponsor logos styling -->
+   <style>
         .sponsors-slider {
             background: #2C315F;
             padding: 50px 0px;
@@ -32,6 +32,12 @@
             margin-bottom: 40px;
         }
 
+        .slider-wrapper {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         .slider-container {
             overflow: hidden;
             position: relative;
@@ -42,10 +48,15 @@
         .slider-track {
             display: flex;
             animation: slide 40s linear infinite;
-            width: calc(200px * 34); /* All logos × 2 for seamless loop */
+            width: calc(200px * 42); /* All logos × 2 for seamless loop */
+            transition: transform 0.3s ease;
         }
 
         .slider-track:hover {
+            animation-play-state: paused;
+        }
+
+        .slider-track.paused {
             animation-play-state: paused;
         }
 
@@ -84,6 +95,49 @@
             }
         }
 
+        /* Navigation Arrows */
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-arrow:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .nav-arrow.prev {
+            left: 20px;
+        }
+
+        .nav-arrow.next {
+            right: 20px;
+        }
+
+        .nav-arrow svg {
+            width: 20px;
+            height: 20px;
+            fill: #2C315F;
+        }
+
         /* Gradient fade effects on edges */
         .slider-container::before,
         .slider-container::after {
@@ -106,6 +160,25 @@
             background: linear-gradient(to left, #2C315F, transparent);
         }
 
+        /* Auto-play indicator */
+        .auto-play-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            z-index: 10;
+            transition: opacity 0.3s ease;
+        }
+
+        .auto-play-indicator.hidden {
+            opacity: 0;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .logo-item {
@@ -118,7 +191,25 @@
             }
             
             .slider-track {
-                width: calc(150px * 34);
+                width: calc(150px * 42);
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+            }
+
+            .nav-arrow.prev {
+                left: 10px;
+            }
+
+            .nav-arrow.next {
+                right: 10px;
+            }
+
+            .nav-arrow svg {
+                width: 16px;
+                height: 16px;
             }
         }
     </style>
@@ -1031,7 +1122,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Hon. Dr. Fatima Ezzahra Moutik -->
+                    <!-- Prof. Idris A. Rai -->
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="single-team mb-30">
                             <div class="team-img">
@@ -1041,15 +1132,12 @@
                                 <ul class="team-social">
                                     <li>
                                         <a
-                                            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.linkedin.com/in/fatima-ezzahra-moutik-0b8b1a1b/"><i
+                                            href="https://www.linkedin.com/in/prof-idris-a-rai-20770912/"><i
                                                 class="fab fa-linkedin"></i></a>
                                     </li>
                                     <!-- <li>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                 </li> -->
-                                    <li>
-                                        <a href="https://www.enssup.gov.ma/en/biographie-de-madame-la-ministre"><i class="fas fa-globe"></i></a>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="team-caption">
@@ -2489,144 +2577,154 @@
                     </p>
                 </div>
 
-                <!-- Slider Container -->
-                <div class="slider-container">
-                    <div class="slider-track">
-                        <!-- First set of logos -->
-                        <div class="logo-item">
-                            <img src="" alt="null">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/logo.png" alt="AAU Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets\img\logo\PRB_logo.jpg" alt="PRB Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
-                        </div>
+                <!-- Slider Wrapper -->
+                <div class="slider-wrapper">
+                    <!-- Navigation Arrows -->
+                    <button class="nav-arrow prev" id="prevBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="nav-arrow next" id="nextBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
 
-                        <!-- Duplicate set for seamless loop -->
-                         <div class="logo-item">
-                            <img src="" alt="null">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/logo.png" alt="AAU Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets\img\logo\PRB_logo.jpg" alt="PRB Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
+                    <!-- Slider Container -->
+                    <div class="slider-container">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- First set of logos -->
+                            <div class="logo-item">
+                                <img src="assets/img/logo/logo.png" alt="AAU Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/PRB_logo.jpg" alt="PRB Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
+                            </div>
+
+                            <!-- Duplicate set for seamless loop -->
+                            <div class="logo-item">
+                                <img src="assets/img/logo/logo.png" alt="AAU Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/uni_M_V.png" alt="Mohammed V University Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/uni_M_VI.png" alt="Mohammed VI Polytechnic University Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/obreal_official.png" alt="OBREAL Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/crossref-logo-200.svg" alt="CrossRef Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/Trinka_Logo.png" alt="Trinka Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/icann-logo.jpg" alt="ICANN Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/adobe_learning_curve.png" alt="Adobe Learning Curve Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/center_of_excellence_of_agrifood_system_and_nutrition.jpeg" alt="CEAFSN Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/china_university_of_geosciences.jpg" alt="China Univ. Geosciences Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/durban_university_of_technology_logo.png" alt="DUT Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/Ei_consulting_logo.jpeg" alt="Ei Consulting Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/research_beeline.png" alt="Research Beeline Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/ubuntuNet_logo.png" alt="UbuntuNet Alliance Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/university_of_cape_coast_logo.png" alt="UCC Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/university_of_SA_Logo.jpg" alt="UNISA Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/taylor-and-francis-logo.png" alt="Taylor & Francis Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/IUCEA_logo.jpg" alt="IUCEA Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/PRB_logo.jpg" alt="PRB Logo">
+                            </div>
+                            <div class="logo-item">
+                                <img src="assets/img/logo/ESSA_logo.png" alt="African Union Logo">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Sponsors Area End-->
->
+
         <!-- Contact Area Start -->
         <section id="contact" class="contact-section" style="padding: 50px 20px;">
             <div class="container">
@@ -3239,6 +3337,150 @@
 
                 document.querySelector('.mobile_menu').classList.remove('show');
             });
+        });
+    </script>
+    <!-- sponsors-slider -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderTrack = document.getElementById('sliderTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const autoPlayIndicator = document.getElementById('autoPlayIndicator');
+            
+            let currentIndex = 0;
+            let isAutoPlaying = true;
+            let autoPlayTimeout;
+            const itemWidth = 230; // 200px width + 30px margin
+            const totalItems = 20; // Number of unique logos
+            let manualTransform = 0;
+            
+            // Disable CSS animation and use manual control
+            function disableAutoAnimation() {
+                sliderTrack.style.animation = 'none';
+                sliderTrack.classList.add('paused');
+            }
+            
+            function enableAutoAnimation() {
+                sliderTrack.style.animation = 'slide 40s linear infinite';
+                sliderTrack.classList.remove('paused');
+                sliderTrack.style.transform = '';
+                manualTransform = 0;
+            }
+            
+            // Manual navigation functions
+            function slideToPosition(transform) {
+                sliderTrack.style.transform = `translateX(${transform}px)`;
+                manualTransform = transform;
+            }
+            
+            function slideNext() {
+                disableAutoAnimation();
+                
+                // Move left (negative direction) to show next items
+                manualTransform -= itemWidth * 3; // Move by 3 items for faster navigation
+                
+                // If we've moved too far left, reset to the beginning
+                if (manualTransform <= -(totalItems * itemWidth)) {
+                    manualTransform = 0;
+                }
+                
+                slideToPosition(manualTransform);
+                currentIndex = Math.abs(manualTransform / itemWidth);
+            }
+            
+            function slidePrev() {
+                disableAutoAnimation();
+                
+                // Move right (positive direction) to show previous items
+                manualTransform += itemWidth * 3; // Move by 3 items for faster navigation
+                
+                // If we've moved too far right, go to the end
+                if (manualTransform > 0) {
+                    manualTransform = -((totalItems - 5) * itemWidth); // Show last few items
+                }
+                
+                slideToPosition(manualTransform);
+                currentIndex = Math.abs(manualTransform / itemWidth);
+            }
+            
+            // Pause auto-play temporarily
+            function pauseAutoPlay(duration = 8000) {
+                isAutoPlaying = false;
+                autoPlayIndicator.textContent = 'Manual navigation • Auto-play paused';
+                
+                clearTimeout(autoPlayTimeout);
+                autoPlayTimeout = setTimeout(() => {
+                    isAutoPlaying = true;
+                    enableAutoAnimation();
+                    autoPlayIndicator.textContent = 'Auto-sliding • Click arrows to navigate';
+                }, duration);
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', function() {
+                slideNext();
+                pauseAutoPlay();
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                slidePrev();
+                pauseAutoPlay();
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    slidePrev();
+                    pauseAutoPlay();
+                } else if (e.key === 'ArrowRight') {
+                    slideNext();
+                    pauseAutoPlay();
+                }
+            });
+            
+            // Hide indicator on mobile
+            function checkMobile() {
+                if (window.innerWidth <= 768) {
+                    autoPlayIndicator.style.display = 'none';
+                } else {
+                    autoPlayIndicator.style.display = 'block';
+                }
+            }
+            
+            window.addEventListener('resize', checkMobile);
+            checkMobile();
+            
+            // Touch/swipe support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            sliderTrack.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            sliderTrack.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        // Swipe left - go to next
+                        slideNext();
+                    } else {
+                        // Swipe right - go to previous
+                        slidePrev();
+                    }
+                    pauseAutoPlay();
+                }
+            }
+            
+            // Initialize
+            enableAutoAnimation();
         });
     </script>
 </body>
