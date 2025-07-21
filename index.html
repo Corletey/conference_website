@@ -361,7 +361,7 @@
                 </div>
             </div>
             <!-- Counter Section Begin -->
-            <div class="counter-section position-absolute d-flex flex-wrap justify-content-center align-items-center p-2"
+            <!-- <div class="counter-section position-absolute d-flex flex-wrap justify-content-center align-items-center p-2"
                 style="right: 10px; bottom: 70px;">
                 <div class="cd-timer" id="new-countdown">
                     <div class="row g-2">
@@ -404,7 +404,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Counter Section End -->
         </div>
         <!-- Slider Area End-->
@@ -1257,16 +1257,27 @@
                             16th Quadrennial General Conference - July 21-25, 2025
                         </p>
                         
-                        <!-- Large Button Link -->
-                        <a href="https://sites.google.com/view/aaugencon16/home" 
-                        target="_blank"
-                        class="btn btn-lg d-inline-flex align-items-center justify-content-center"
-                        style="background-color: #292E5E; color: #FFFFFF; 
-                                font-weight: 600; padding: 15px 40px;
-                                border-radius: 8px; font-size: 1.2rem;">
-                            <i class="fas fa-external-link-alt mr-2"></i>
-                            View Full Programme
-                        </a>
+                        <!-- Two Small Button Links -->
+                        <div class="d-inline-flex">
+                            <a href="https://sites.google.com/view/aaugencon16/home" 
+                            target="_blank"
+                            class="btn btn-sm d-inline-flex align-items-center justify-content-center"
+                            style="background-color: #292E5E; color: #FFFFFF; 
+                                    font-weight: 600; padding: 10px 20px;
+                                    border-radius: 8px; font-size: 1rem; margin-right: 10px;">
+                                <i class="fas fa-external-link-alt mr-2"></i>
+                                View Programme
+                            </a>
+                            <a href="https://sites.google.com/view/aau-gencon16-brochure/home" 
+                            target="_blank"
+                            class="btn btn-sm d-inline-flex align-items-center justify-content-center"
+                            style="background-color: #292E5E; color: #FFFFFF; 
+                                    font-weight: 600; padding: 10px 20px;
+                                    border-radius: 8px; font-size: 1rem;">
+                                <i class="fas fa-external-link-alt mr-2"></i>
+                                View Brochure
+                            </a>
+                        </div>
                         
                         <!-- PDF Alternative -->
                         <!-- <div class="mt-4">
@@ -3097,8 +3108,8 @@
     <!-- Preloader -->
     <script>
         $(window).on('load', function () {
-            $('#preloader-active').delay(20).fadeOut('slow');
-            $('body').delay(20).css({
+            $('#preloader-active').delay(10).fadeOut('slow');
+            $('body').delay(10).css({
                 'overflow': 'visible'
             });
         });
@@ -3109,7 +3120,7 @@
     <script src="./assets/js/waypoints.min.js"></script>
     <script src="./assets/js/jquery.countdown.min.js"></script>
     <!-- Slider Countdown Script -->
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             var targetDate = new Date(2025, 6, 21, 0, 0, 0); // July 21, 2025
 
@@ -3151,7 +3162,7 @@
                 }
             }, 1000);
         });
-    </script>
+    </script> -->
 
 
     <!-- Include Bootstrap JS and jQuery (if not already included) -->
@@ -3209,7 +3220,7 @@
     </script> -->
 
     <!-- ConferencePricing Countdown Script -->
-    <script>
+    <!-- <script>
         function startCountdown() {
             const deadline = new Date("April 25, 2025 23:59:59").getTime();
             const x = setInterval(function () {
@@ -3227,7 +3238,7 @@
             }, 1000);
         }
         window.onload = startCountdown;
-    </script>
+    </script> -->
 
     <!-- Pricing Fee Card Script -->
     <!-- <script>
